@@ -1,0 +1,24 @@
+
+
+{% block subject %}z'animeau welcome mail{% endblock %}
+
+{% block body_text %}
+    {% autoescape false %}
+        Hello {{ user.username }} !
+
+        Your account have been created with success
+
+        Greetings,
+        the z'animeau team
+    {% endautoescape %}
+{% endblock %}
+
+{% block body_html %}
+Hello {{ user.username }} ! <br>
+please click on this link to activate your account
+{{ confirmationUrl }}
+<br>
+        Greetings,<br>
+        the z'animeau team
+
+{% endblock %}
