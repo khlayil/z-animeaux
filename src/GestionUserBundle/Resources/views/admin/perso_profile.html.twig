@@ -1,5 +1,114 @@
 {% extends 'admin/layout.html.twig' %}
+{% trans_default_domain 'FOSUserBundle' %}
+
 {% block content %}
-{{ form_start(form) }}
-    {{ form_end(form) }}
+    <div class="col-md-10">
+        <div class="m-portlet">
+            <div class="m-portlet__head">
+                <div class="m-portlet__head-caption">
+                    <div class="m-portlet__head-title">
+						<span class="m-portlet__head-icon m--hide">
+						<i class="la la-gear"></i>
+						</span>
+                        <h3 class="m-portlet__head-text">
+                            Edit your personal information
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <!--begin::Form-->
+            <form class="m-form m-form--label-align-right" action="{{ path('fos_user_profile_edit') }}">
+                <div class="m-portlet__body">
+                    <div class="m-form__section m-form__section--first">
+                        <div class="m-form__heading">
+                            <h3 class="m-form__heading-title">Customer Info:</h3>
+                        </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-2 col-form-label">Full Name:</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control m-input" id="username" value="{{  }}" placeholder="Enter full name">
+                                {{ form_row(form.adresse, {
+                                    'attr': { 'class': 'form-control m-input' },
+                                    'help': 'Choose something adresse unique and clever'
+                                }) }}
+                                {{ form_widget(form.email, { 'class': { 'class': 'input-lg' } }) }}
+
+                                <span class="m-form__help">Please enter your full name</span>
+                            </div>
+                        </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-2 col-form-label">Email address:</label>
+                            <div class="col-lg-6">
+                                <input type="email" class="form-control m-input" id="email" placeholder="Enter email">
+                                <span class="m-form__help">We'll never share your email with anyone else</span>
+                            </div>
+                        </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-2 col-form-label">New password:</label>
+                            <div class="col-lg-6">
+                                <input type="password" class="form-control m-input" id="password" placeholder="Enter new password">
+                                <span class="m-form__help">We'll never ask you about your password</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-2 col-form-label">Adresse:</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control m-input" id="adresse" placeholder="Enter adresse">
+                            </div>
+                        </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-2 col-form-label">Phone number:</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control m-input" id="phone_number" placeholder="Enter phone number">
+                            </div>
+                        </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-2 col-form-label">City:</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control m-input" id="city" placeholder="Enter city">
+                            </div>
+                        </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-2 col-form-label">State:</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control m-input" id="state" placeholder="Enter state">
+                            </div>
+                        </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-2 col-form-label">Zip code:</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control m-input" id="zip_code" placeholder="Enter zip code">
+                            </div>
+                        </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-2 col-form-label">Profile picture:</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control m-input" id="profile_pic" placeholder="Select your profile picture">
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+                <div class="m-portlet__foot m-portlet__foot--fit">
+                    <div class="m-form__actions m-form__actions">
+                        <div class="row">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-6">
+
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="reset" class="btn btn-secondary">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <!--end::Form-->
+        </div>
+    </div>
 {% endblock %}

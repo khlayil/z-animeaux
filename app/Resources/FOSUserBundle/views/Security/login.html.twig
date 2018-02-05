@@ -1,24 +1,248 @@
 {% trans_default_domain 'FOSUserBundle' %}
-{% block fos_user_content %}
+
+{% extends 'client/layout.html.twig' %}
+
+{% block body %}
+    <!-- BREADCRUMBS SETCTION START -->
     {% if error %}
         <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
     {% endif %}
+    <div class="breadcrumbs-section mb-100 fix">
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="breadcrumbs-inner text-center ptb-100">
+                            <h1 class="breadcrumbs-title">Account</h1>
 
-    <form action="{{ path("fos_user_security_check") }}" method="post">
-        {% if csrf_token %}
-            <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
-        {% endif %}
-hahahah
-        <label for="username">{{ 'security.login.username'|trans }}</label>
-        <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
+                            <nav class="" role="navigation" aria-label="breadcrumbs">
+                                <ul class="breadcrumb-list">
+                                    <li>
+                                        <a href="" title="Back to the frontpage">Home</a>
+                                    </li>
+                                    <li>
 
-        <label for="password">{{ 'security.login.password'|trans }}</label>
-        <input type="password" id="password" name="_password" required="required" />
 
-        <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
-        <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
 
-        <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
-    </form>
+                                        <span>Account</span>
 
-{% endblock fos_user_content %}
+
+                                    </li>
+                                </ul>
+                            </nav>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BREADCRUMBS SETCTION END -->
+
+
+    <main>
+        <!-- my-account-area start -->
+        <div class="my-account-area mb-100">
+            <div class="container">
+                <h6 class="account-heading">My Account</h6>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div id="CustomerLoginForm" class="login-form-area">
+                            <form action="{{ path("fos_user_security_check") }}" method="post">
+
+                            <form method="post" action="https://my-pets-1.myshopify.com/account/login" id="customer_login" accept-charset="UTF-8"><input type="hidden" name="form_type" value="customer_login" /><input type="hidden" name="utf8" value="✓" />
+                                <div class="login-info">
+                                    <h6>Login</h6>
+
+                                    {% if csrf_token %}
+                                        <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+                                    {% endif %}
+
+                                    <div class="single-field">
+                                        <label for="CustomerEmail">Username<span class="required">*</span></label>
+                                        <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" class="input-text" />
+
+                                    </div><!-- /.single-field -->
+
+                                    <div class="single-field">
+                                        <label for="CustomerPassword">Password<span class="required">*</span></label>
+                                        <input type="password" id="password" name="_password" required="required" class="input-text" />
+
+                                        <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+                                        <span class="password-recover"><a href="#recover" id="">remember me</a></span>
+
+                                    </div><!-- /.single-field -->
+
+                                    <div class="form-action">
+
+                                        <span class="password-recover"><a href="#recover" id="RecoverPassword">Forgot your password?</a></span>
+
+                                        <input type="submit" class="login-btn" value="Sign In">
+                                    </div><!-- /.form-action -->
+                                </div><!-- /.login-info -->
+                            </form>
+                        </div><!-- /.login-form-area -->
+
+
+                        <div id="RecoverPasswordForm" class="recover-form-area" style="display: none;">
+
+                            <h6>Reset your password</h6>
+                            <p>We will send you an email to reset your password.</p>
+
+                            <div class="recover-password-form">
+                                <form method="post" action="https://my-pets-1.myshopify.com/account/recover" accept-charset="UTF-8"><input type="hidden" name="form_type" value="recover_customer_password" /><input type="hidden" name="utf8" value="✓" />
+
+
+
+
+
+
+                                    <div class="single-field">
+                                        <label for="RecoverEmail">Email</label>
+                                        <input type="email" value="" name="email" id="RecoverEmail" placeholder="Email" >
+                                    </div>
+
+                                    <div class="form-action">
+                                        <input type="submit" class="recover-btn" value="Submit">
+                                        <button type="button" id="HideRecoverPasswordLink" class="cancel-btn">Cancel</button>
+                                    </div>
+
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                        <div class="registration-form-area">
+                            <form action="#" method="post">
+                                <div class="registration-info">
+                                    <h6>Register</h6>
+                                    <p>By creating an account you will be able to shop faster, be up to date on an order&#39;s status, and keep track of the orders you have previously made. </p>
+                                    <div class="form-action">
+                                        <a href="" class="register-btn">Register</a>
+                                    </div><!-- /.form-action -->
+                                </div><!-- /.registration-info -->
+                            </form>
+                        </div><!-- /.registration-form-area -->
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- my-account-area end -->
+    </main>
+
+
+
+    <style>
+        .footer-top {
+            background: #362526 none repeat scroll 0px 0px;
+        }
+        .footer-bottom {
+            background: #291c1d none repeat scroll 0px 0px;
+        }
+    </style>
+
+
+
+
+
+
+
+    </div>
+
+    <!-- /snippets/product-quickview.liquid -->
+
+    <!-- product-quickview start -->
+
+    <div class="quickview-wrapper">
+        <!-- Modal start -->
+        <div class="modal fade" id="quickViewModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-product">
+                            <div class="product-images">
+                                <!-- image -->
+                                <div class="main-image images product-main-image__item">
+                                    <div class="img_box_1"></div>
+                                </div>
+                            </div><!-- .product-images -->
+
+                            <div class="product-info">
+                                <h1 class="product_title">FROM_JS</h1>
+
+
+                                <div class="ratings product-info__review">
+                                    <div class="rating-box rating">
+                                        <span class="shopify-product-reviews-badge" data-id=""></span>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="price-box">
+                                    <div class="product-price product-info__price price-part">
+                                        <h6 class="special-price">
+                                            <span class="main">jsprice</span>
+                                            <span class="price-box__new">jsprice</span>
+                                        </h6>
+                                    </div>
+                                </div>
+
+
+                                <div class="product-short-desc">
+                                    <div class="divider divider--xs product-info__divider"></div>
+                                    <div class="product-info__description product-des">FROM_JS</div>
+                                </div>
+
+                                <div class="quick-add-to-cart">
+                                    <form id="add-item-qv" action="https://my-pets-1.myshopify.com/cart/add" method="post">
+                                        <div class="variants"></div>
+                                        <div class="quantity-area">
+                                            <div class="product-quantity">
+                                                <div class="quantity-area">
+                                                    <div class="cart-plus-minus">
+                                                        <input type="number" name="quantity" value="1" min="1" title="Qty" class="input-text qty">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <button type="submit" name="add" class="add-to-cart-button addtocartqv">
+                                            Add to Cart
+                                        </button>
+
+                                        <script>
+                                            jQuery('.addtocartqv').click(function(e) {
+                                                e.preventDefault();
+                                                Shopify.addItemFromFormStart('add-item-qv', jQuery(this).attr('id'));
+                                            });
+                                        </script>
+
+                                    </form>
+                                </div>
+                            </div><!-- .product-info -->
+                        </div><!-- .modal-product -->
+                    </div><!-- .modal-body -->
+                </div><!-- .modal-content -->
+            </div><!-- .modal-dialog -->
+        </div>
+        <!-- Modal end -->
+    </div>
+
+
+{% endblock %}

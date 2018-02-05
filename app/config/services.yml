@@ -38,3 +38,7 @@ services:
         class: GestionUserBundle\Form\RegistrationUserType
         tags:
             - { name: form.type, alias: gestion_user_registration }
+    app.form.profile:
+        class: GestionUserBundle\Form\ProfileUserType
+        tags:
+            - { name: form.type, alias: gestion_user_profile }

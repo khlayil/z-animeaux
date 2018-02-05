@@ -82,7 +82,9 @@ fos_user:
         confirmation:
             enabled: true
             template:   email/registration/email.txt.twig
-
+    profile:
+        form:
+            type: GestionUserBundle\Form\ProfileUserType
 
     from_email:
         address: "zanimeau.lab@gmail.com"

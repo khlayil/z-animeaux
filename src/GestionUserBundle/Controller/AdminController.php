@@ -10,9 +10,8 @@ namespace GestionUserBundle\Controller;
 
 
 use GestionUserBundle\Entity\User;
+use GestionUserBundle\Form\RegistrationUserType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\File\Exception\AccessDeniedException;
-use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 
 
@@ -23,14 +22,14 @@ class AdminController extends Controller
         $user = $this->getDoctrine()->getRepository(User::class)->find($id);
 
 
-        /** @var $formFactory \FOS\UserBundle\Form\Factory\FactoryInterface */
-        $formFactory = $this->get('fos_user.profile.form.factory');
+      //  /** @var $formFactory \FOS\UserBundle\Form\Factory\FactoryInterface */
+      //  $formFactory = $this->get('fos_user.profile.form.factory');
 
-        $form = $formFactory->createForm();
+        $form = $this->createForm(RegistrationUserType::class,$user);
         $form->setData($user);
         $form->handleRequest($request);
 
-        if ($form->isValid()) {
+        if ($form->isSubmitted() && $form->isValid()) {
             /** @var $userManager \FOS\UserBundle\Model\UserManagerInterface */
             $userManager = $this->get('fos_user.user_manager');
             $userManager->updateUser($user);
