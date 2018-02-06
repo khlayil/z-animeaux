@@ -32,7 +32,7 @@ class User extends BaseUser
 
     /**
      * @var string
-     *
+      *
      * @ORM\Column(name="profile_pic", type="string", length=255, nullable=true)
      */
     private $profilePic;

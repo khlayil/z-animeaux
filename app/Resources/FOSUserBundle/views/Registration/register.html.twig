@@ -1,5 +1,142 @@
-{% extends "@FOSUser/layout.html.twig" %}
+{% extends 'client/layout.html.twig' %}
 
-{% block fos_user_content %}
-{% include "@FOSUser/Registration/register_content.html.twig" %}
-{% endblock fos_user_content %}
+{% block body %}
+    <!-- BREADCRUMBS SETCTION START -->
+
+    <div class="breadcrumbs-section mb-100 fix">
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="breadcrumbs-inner text-center ptb-100">
+                            <h1 class="breadcrumbs-title">Create Account</h1>
+
+                            <nav class="" role="navigation" aria-label="breadcrumbs">
+                                <ul class="breadcrumb-list">
+                                    <li>
+                                        <a href="" title="Back to the frontpage">Home</a>
+                                    </li>
+                                    <li>
+
+
+
+                                        <span>Create Account</span>
+
+
+                                    </li>
+                                </ul>
+                            </nav>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BREADCRUMBS SETCTION END -->
+
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3 text-center">
+                    <div class="registration-area fix mb-100">
+                        <h4>Create Account</h4>
+                                        {{ form_errors(form) }}
+
+                        <div class="form-vertical">
+                            {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': { 'class': 'fos_user_registration_register' } }) }}
+
+                           <input type="hidden" name="form_type" value="create_customer" /><input type="hidden" name="utf8" value="✓" />
+
+
+                                <div class="registration-fields">
+                                    <div class="single-field">
+                                        <label for="username">Username<span class="required">*</span></label>
+                                        {{ form_widget(form.username, {'attr': {'class':'input-full','required' : 'true'}}) }}
+                                        {{ form_errors(form.username) }}
+
+                                    </div>
+
+                                    <div class="single-field">
+                                        <label for="email">E-mail<span class="required">*</span></label>
+                                        {{ form_widget(form.email, {'attr': {'class':'input-full','required' : 'true'}}) }}
+                                        {{ form_errors(form.email) }}
+
+                                    </div>
+
+                                    <div class="single-field">
+                                        <label for="password_first">Password<span class="required">*</span></label>
+                                        {{ form_widget(form.plainPassword.first, {'attr': {'class':'input-full','required' : 'true'}}) }}
+                                        {{ form_errors(form.plainPassword.first) }}
+
+                                    </div>
+
+                                    <div class="single-field">
+                                        <label for="password_second">Comfirme password<span class="required">*</span></label>
+                                        {{ form_widget(form.plainPassword.second, {'attr': {'class':'input-full','required' : 'true'}}) }}
+                                        {{ form_errors(form.plainPassword.second) }}
+
+                                    </div>
+
+                                    <div class="single-field">
+                                        <label for="sexe">Sexe<span class="required">*</span></label>
+                                        {{ form_widget(form.sexe, {'attr': {'class':'input-full','required' : 'true'}}) }}
+                                        {{ form_errors(form.sexe) }}
+
+                                    </div>
+
+                                    <div class="single-field">
+                                        <label for="adresse">Adresse<span class="required">*</span></label>
+                                        {{ form_widget(form.adresse, {'attr': {'class':'input-full','required' : 'true'}}) }}
+                                        {{ form_errors(form.adresse) }}
+
+                                    </div>
+
+                                    <div class="single-field">
+                                        <label for="state">State<span class="required">*</span></label>
+                                        {{ form_widget(form.state, {'attr': {'class':'input-full','required' : 'true'}}) }}
+                                        {{ form_errors(form.state) }}
+
+                                    </div>
+
+                                    <div class="single-field">
+                                        <label for="city">City<span class="required">*</span></label>
+                                        {{ form_widget(form.city, {'attr': {'class':'input-full','required' : 'true'}}) }}
+                                        {{ form_errors(form.city) }}
+
+                                    </div>
+
+                                    <div class="single-field">
+                                        <label for="zipcode">Zip code<span class="required">*</span></label>
+                                        {{ form_widget(form.zipCodes, {'attr': {'class':'input-full','required' : 'true'}}) }}
+                                        {{ form_errors(form.zipCodes) }}
+
+                                    </div>
+
+                                    <div class="single-field">
+                                        <label for="phonenumber">Phone number<span class="required">*</span></label>
+                                        {{ form_widget(form.phoneNumber, {'attr': {'class':'input-full','required' : 'true'}}) }}
+                                        {{ form_errors(form.phoneNumber) }}
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="form-action">
+                                    <input type="submit" value="Create" class="btn create">
+                                    <a href="" class="return-btn">Return to Store</a>
+                                </div>
+
+                            {{ form_end(form) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
+
