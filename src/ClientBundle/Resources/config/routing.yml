@@ -1,0 +1,25 @@
+
+
+client_cart:
+    path:     /cart
+    defaults: { _controller: ClientBundle:Default:cart }
+
+client_collection:
+    path:     /collection
+    defaults: { _controller: ClientBundle:Default:collection }
+
+client_about:
+    path:     /about
+    defaults: { _controller: ClientBundle:Default:about }
+
+client_checkout:
+    path:     /user/cart/checkout/{id_cart}
+    defaults: { _controller: ClientBundle:Default:checkout }
+
+client_contact:
+    path:     /contact
+    defaults: { _controller: ClientBundle:Default:contact }
+
+client_product:
+    path:     /show/{id}
+    defaults: { _controller: ClientBundle:Default:product }

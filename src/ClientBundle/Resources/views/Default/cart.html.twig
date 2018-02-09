@@ -1,0 +1,187 @@
+{% extends 'client/layout.html.twig' %}
+
+{% block body %}
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="breadcrumbs-inner text-center ptb-100">
+                        <h1 class="breadcrumbs-title">Your Shopping Cart</h1>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="shopify-section-cart-template" class="shopify-section">
+        <div class="shopping-cart-area">
+            <form action="/cart" method="post" novalidate="" class="cart AVAST_PAM_nonloginform">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="shopping-cart-table">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th>Remove</th>
+                                            <th>Image</th>
+                                            <th>Product</th>
+                                            <th>Price</th>
+                                            <th>Quantity</th>
+                                            <th>Total</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+
+                                        <tr>
+                                            <td class="product-remove">
+                                                <a href="/cart/change?line=1&amp;quantity=0" title="Remove this Item" class="remove-btn">
+                                                    <i class="pe-7s-close-circle"></i>
+                                                </a>
+                                            </td>
+                                            <td class="product-img" data-label="Product">
+                                                <a href="/products/dummy-product-name?variant=48378637901">
+                                                    <img src="//cdn.shopify.com/s/files/1/2452/7833/products/3_fc2a579a-6213-4d39-93a4-b709c993bca7_small.jpg?v=1508988151" alt="dummy Product name">
+                                                </a>
+                                            </td>
+                                            <td class="product-name">
+                                                <a href="/products/dummy-product-name?variant=48378637901">dummy Product name</a>
+                                            </td>
+                                            <td class="unit-price" data-label="Price">
+                                                <span class="amount">$56.20</span>
+                                            </td>
+                                            <td class="product-quantity" data-label="Quantity">
+                                                <div class="quantity-area">
+                                                    <div class="cart-plus-minus">
+
+
+                                                        <div class="js-qty">
+                                                            <button type="button" class="js-qty__adjust js-qty__adjust--minus icon-fallback-text" data-id="" data-qty="0">
+                                                                <span class="icon icon-minus" aria-hidden="true"></span>
+                                                                <span class="fallback-text">−</span>
+                                                            </button>
+                                                            <input class="js-qty__num" value="1" min="1" data-id="" aria-label="quantity" pattern="[0-9]*" name="updates[]" id="updates_48378637901" type="text">
+                                                            <button type="button" class="js-qty__adjust js-qty__adjust--plus icon-fallback-text" data-id="" data-qty="11">
+                                                                <span class="icon icon-plus" aria-hidden="true"></span>
+                                                                <span class="fallback-text">+</span>
+                                                            </button>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="total-price" data-label="Total">
+                                                <span class="amount">$56.20</span>
+                                            </td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div><!-- /.shopping-cart-table -->
+                        </div>
+                    </div>
+                    <div class="shopping-cart-calculation">
+                        <div class="row">
+                            <div class="col-md-5 col-sm-6">
+
+                                <div class="calculate-shipping">
+                                    <div class="note-area">
+                                        <label for="CartSpecialInstructions">Special instructions for seller</label>
+                                        <textarea name="note" class="input-full cart-note" id="CartSpecialInstructions"></textarea>
+                                    </div>
+                                </div><!-- /.calculate-shipping -->
+
+                            </div>
+                            <div class=" col-md-6 col-md-offset-1 col-sm-6 ">
+                                <div class="cart-total">
+                                    <h6>Cart Totals</h6>
+                                    <div class="cart-total-table">
+                                        <p><em>Shipping &amp; taxes calculated at checkout</em></p><table class="table">
+                                            <tbody>
+                                            <tr class="subtotal">
+                                                <th>Subtotal:</th>
+                                                <td>$56.20</td>
+                                            </tr>
+
+                                            <tr class="order-total">
+                                                <th>Order Totals:</th>
+                                                <td>$56.20</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div><!-- /.cart-total-table -->
+                                </div><!-- /.cart-total -->
+                            </div>
+                        </div>
+                    </div><!-- /.shopping-cart-calculation -->
+                    <div class="shopping-cart-bottom">
+                        <div class="row">
+                            <div class="col-md-5 col-sm-12 col-xs-12">
+
+                            </div>
+                            <div class="col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
+                                <div class="shopping-cart-btns">
+                                    <input name="checkout" class="checkout-btn" title="Proceed to Check Out" value="Check Out" type="submit">
+                                    <input name="update" class="update-btn" title="Update Cart" value="Update Cart" type="submit">
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.shopping-cart-bottom -->
+
+                </div>
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+<!--  EMPTY CARD
+    <div id="shopify-section-cart-template" class="shopify-section">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="cart-empty-msg">
+                        <h4>Shopping Cart</h4>
+                        <p>Your cart is currently empty.</p>
+                        <p>Continue browsing <a href="/collections/all">here</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+-->
+
+
+
+{% endblock %}
+

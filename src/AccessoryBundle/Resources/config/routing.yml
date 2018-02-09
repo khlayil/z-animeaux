@@ -1,0 +1,28 @@
+accessory_homepage:
+    path:     /
+    defaults: { _controller: AccessoryBundle:Default:index }
+
+show:
+    path:     /product/{id}
+    defaults: { _controller: AccessoryBundle:Accessory:show }
+
+list:
+    path:     /list
+    defaults: { _controller: AccessoryBundle:Accessory:list }
+test:
+    path: /test
+    defaults: {_controller: AccessoryBundle:Accessory:test}
+
+AdminList:
+    path: /admin/list
+    defaults: {_controller: AccessoryBundle:Accessory:AdminList }
+AdminDelete:
+    path: /admin/Delete/{id}
+    defaults: {_controller: AccessoryBundle:Accessory:Delete }
+
+updateAccessory:
+    path:     /admin/Update/{id}
+    defaults: { _controller: AccessoryBundle:Accessory:Update }
+add:
+    path:     /admin/add
+    defaults: {_controller: AccessoryBundle:Accessory:Add }

@@ -1,0 +1,345 @@
+{% extends 'admin/layout.html.twig' %}
+{% block body %}
+    <!-- BREADCRUMBS SETCTION START -->
+
+    <div class="breadcrumbs-section mb-100 fix">
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="breadcrumbs-inner text-center ptb-100">
+                            <h1 class="breadcrumbs-title">Accessories</h1>
+
+                            <nav class="" role="navigation" aria-label="breadcrumbs">
+                                <ul class="breadcrumb-list">
+                                    <li>
+                                        <a href="#" title="Back to the frontpage">Home</a>
+                                    </li>
+                                    <li>
+
+
+
+
+                                        <span>Accessories</span>
+
+
+
+                                    </li>
+                                </ul>
+                            </nav>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BREADCRUMBS SETCTION END -->
+
+
+    <main>
+        <div id="shopify-section-collection-template" class="shopify-section"><div id="shop" class="shop-area mb-100">
+                <div class="container">
+                    <div class="row">
+
+
+
+
+                        <div class="col-md-9 col-sm-12 pull-right">
+                            <div class="toolbar fix">
+                                <div class="view-mode">
+                                    <span class="view-style">View Style:</span>
+                                    <button type="button" title="Grid view" class="change-view change-view--active" data-view="grid">
+    <span class="icon-fallback-text">
+      <i class="fa fa-th"></i>
+      <span class="fallback-text">Grid view</span>
+    </span>
+                                    </button>
+                                    <button type="button" title="List view" class="change-view" data-view="list">
+    <span class="icon-fallback-text">
+      <i class="fa fa-th-list"></i>
+      <span class="fallback-text">List view</span>
+    </span>
+                                    </button>
+                                </div>
+
+                                <div class="form-horizontal">
+                                    <div class="sorter">
+                                        <select name="SortBy" id="SortBy">
+                                            <option value="manual">Featured</option>
+                                            <option value="best-selling">Best Selling</option>
+                                            <option value="title-ascending">Alphabetically, A-Z</option>
+                                            <option value="title-descending">Alphabetically, Z-A</option>
+                                            <option value="price-ascending">Price, low to high</option>
+                                            <option value="price-descending">Price, high to low</option>
+                                            <option value="created-descending">Date, new to old</option>
+                                            <option value="created-ascending">Date, old to new</option>
+                                        </select>
+                                    </div><!-- /.sorter -->
+                                </div>
+
+                                <script>
+                                    /*============================================================================
+                                      Inline JS because collection liquid object is only available
+                                      on collection pages and not external JS files
+                                    ==============================================================================*/
+                                    Shopify.queryParams = {};
+                                    if (location.search.length) {
+                                        for (var aKeyValue, i = 0, aCouples = location.search.substr(1).split('&'); i < aCouples.length; i++) {
+                                            aKeyValue = aCouples[i].split('=');
+                                            if (aKeyValue.length > 1) {
+                                                Shopify.queryParams[decodeURIComponent(aKeyValue[0])] = decodeURIComponent(aKeyValue[1]);
+                                            }
+                                        }
+                                    }
+
+                                    $(function() {
+                                        $('#SortBy')
+                                            .val('title-ascending')
+                                            .bind('change', function() {
+                                                    Shopify.queryParams.sort_by = jQuery(this).val();
+                                                    location.search = jQuery.param(Shopify.queryParams);
+                                                }
+                                            );
+                                    });
+                                </script>
+                            </div>
+
+                            <div class="tab-content">
+                                <!-- shop-grid-area start -->
+                                <div class="shop-grid-area text-center">
+                                    <div class="row">
+
+                                        {% for accessory in accessories %}
+                                            <div class="col-md-4 col-sm-6 col-xs-6">
+                                                <div class="single-product">
+                                                    <div class="product-img">
+                                                        <a href="{{ path('show', { 'id': accessory.id}) }}">
+                                                            <img src="{{ asset(accessory.imageUrl) }}" alt="{{ accessory.name }}" style="width: 325px;height: 257px;"/>
+                                                        </a>
+                                                        <div class="product-overlay"></div>
+
+                                                        <a href="{{ path('show', { 'id': accessory.id}) }}" class="quick-view modal-view"  title="More info">
+                                                            <i class="pe-7s-search"></i>
+                                                        </a>
+
+                                                        <a href="javascript:void(0);" onclick="Shopify.addItem(48378729741, 1); return false;" class="cart-btn quick-view" title="Add to Cart"><i class="pe-7s-cart"></i></a>
+
+                                                    </div>
+                                                    <div class="product-info">
+                                                        <h6 class="product-name"><a href="{{ path('show', { 'id': accessory.id}) }}">{{ accessory.name }}</a></h6>
+                                                        <div class="single-product-review">
+                                                            <div class="product-info__review">
+                                                                <div class="rating"><span class="shopify-product-reviews-badge" data-id="11004917581"></span></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-price">
+
+                                                            <h6 class="special-price"><span>{{ accessory.price }} Dt</span></h6>
+
+                                                        </div>
+                                                        <!--<div class="cart-btn-container">
+                                                            <select name="id" >
+
+                                                                <option value="48378729741">xl / blue / partex - $90.00</option>
+
+                                                                <option value="48378729805">xl / blue / wood - $90.00</option>
+
+                                                                <option value="48378729869">xl / white / partex - $90.00</option>
+
+                                                                <option value="48378729933">xl / white / wood - $90.00</option>
+
+                                                                <option value="48378729997">xl / yellow / partex - $90.00</option>
+
+                                                                <option value="48378730061">xl / yellow / wood - $90.00</option>
+
+                                                                <option value="48378730125">xl / black / partex - $90.00</option>
+
+                                                                <option value="48378730189">xl / black / wood - $90.00</option>
+
+                                                                <option value="48378730253">ml / blue / partex - $90.00</option>
+
+                                                                <option value="48378730317">ml / blue / wood - $90.00</option>
+
+                                                                <option value="48378730445">ml / white / partex - $90.00</option>
+
+                                                                <option value="48378730509">ml / white / wood - $90.00</option>
+
+                                                                <option value="48378730573">ml / yellow / partex - $90.00</option>
+
+                                                                <option value="48378730637">ml / yellow / wood - $90.00</option>
+
+                                                                <option value="48378730701">ml / black / partex - $90.00</option>
+
+                                                                <option value="48378730765">ml / black / wood - $90.00</option>
+
+                                                                <option value="48378730829">xs / blue / partex - $90.00</option>
+
+                                                                <option value="48378730893">xs / blue / wood - $90.00</option>
+
+                                                                <option value="48378730957">xs / white / partex - $90.00</option>
+
+                                                                <option value="48378731085">xs / white / wood - $90.00</option>
+
+                                                                <option value="48378731213">xs / yellow / partex - $90.00</option>
+
+                                                                <option value="48378731341">xs / yellow / wood - $90.00</option>
+
+                                                                <option value="48378731405">xs / black / partex - $90.00</option>
+
+                                                                <option value="48378731469">xs / black / wood - $90.00</option>
+
+                                                            </select>
+                                                        </div>-->
+                                                    </div>
+                                                </div><!-- /.single-product -->
+
+                                            </div>
+                                        {% endfor %}
+
+
+                                    </div>
+                                </div>
+                                <!-- shop-grid-area end -->
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="pagination-area fix">
+
+                                        <div class="pagination-links">
+                                            <ul>
+                                                <li>
+                                                    <span class="page current">1</span> <span class="page"><a href="all4658.html?page=2" title="">2</a></span> <span class="next"><a href="all4658.html?page=2" title="">&gt;</a></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col-md-3 pull-left col-sm-12 col-xs-12">
+                            <div class="sidebar-widget-area">
+
+                                <div class="single-sidebar-widget">
+
+                                    <h6 class="widget-title">Categories</h6>
+
+
+                                    <div class="menu-list cl_list">
+                                        <ul>
+
+                                            <li class=""><a href="canned-food.html">Canned Food <span>(11)</span></a></li>
+
+                                            <li class=""><a href="dry-food.html">Dry Food <span>(10)</span></a></li>
+
+                                            <li class=""><a href="food-pouches.html">Food Pouches <span>(12)</span></a></li>
+
+                                            <li class=""><a href="fresh-food.html">Fresh Food <span>(18)</span></a></li>
+
+                                            <li class=""><a href="general-health.html">General Health <span>(12)</span></a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                                <!-- Product Type Filter -->
+
+                                <div class="single-sidebar-widget">
+
+                                    <h6 class="widget-title">Types</h6>
+
+
+                                    <div class="menu-list cl_list">
+                                        <ul>
+
+
+                                            <li class=""><a href="typesa0fc.html?q=assorted">assorted</a></li>
+
+
+
+                                            <li class=""><a href="typesd8f6.html?q=box">box</a></li>
+
+
+
+                                            <li class=""><a href="types170d.html?q=chair">chair</a></li>
+
+
+
+                                            <li class=""><a href="types9e9d.html?q=table">table</a></li>
+
+
+
+                                            <li class=""><a href="types675a.html?q=table-lamp">table-lamp</a></li>
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+
+                                <!-- Product Brand Filter -->
+
+                                <div class="single-sidebar-widget">
+
+                                    <h6 class="widget-title">Brand</h6>
+
+                                    <div class="menu-list cl_list">
+                                        <ul>
+
+                                            <li><a href="vendors9932.html?q=brothers">brothers</a></li>
+
+                                            <li><a href="vendors7b34.html?q=hatil">hatil</a></li>
+
+                                            <li><a href="vendors29f7.html?q=hurst-furniture">hurst-furniture</a></li>
+
+                                            <li><a href="vendorsdb8a.html?q=navana">navana</a></li>
+
+                                            <li><a href="vendors650e.html?q=otobi">otobi</a></li>
+
+                                            <li><a href="vendorsa2ed.html?q=rokomari">rokomari</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </main>
+{% endblock %}
+

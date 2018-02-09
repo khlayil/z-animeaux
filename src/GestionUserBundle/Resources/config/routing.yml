@@ -1,5 +1,5 @@
 gestion_user_homepage:
-    path:     /
+    path:     /login
     defaults: { _controller: GestionUserBundle:Default:index }
 
 fos_user_security:
@@ -22,7 +22,7 @@ fos_user_change_password:
     prefix: /profile
 
 index_user:
-    path:     /user/index
+    path:     /
     defaults: { _controller: GestionUserBundle:Default:indexuser }
 index_admin:
     path:     /admin/index

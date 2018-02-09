@@ -34,7 +34,7 @@
 
 
 
-    <meta property="og:url" content="">
+    <meta property="og:url" content="{{ path('index_user') }}">
     <meta property="og:site_name" content="My Pets 1">
 
 
@@ -44,16 +44,15 @@
     <meta name="twitter:card" content="summary">
 
 
-    <link rel="canonical" href="">
+    <link rel="canonical" href="{{ path('index_user') }}">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="#747474">
 
     <!-- CSS ================================================== -->
     <link href="{{ asset('client/cdn.shopify.com/s/files/1/2452/7833/t/2/assets/timber.scsse8b2.css?8981192451439604557') }}" rel="stylesheet" type="text/css" media="all" />
     <link href="{{ asset('client/cdn.shopify.com/s/files/1/2452/7833/t/2/assets/preloadere8b2.css?8981192451439604557') }}" rel="stylesheet" type="text/css" media="all" />
-    {#<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" media="all" />
-    <link href="http://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet" type="text/css" media="all" />#}
-    <link href="{{  asset('client/cdn.shopify.com/s/files/1/2452/7833/t/2/assets/bootstrap.mine8b2.css?8981192451439604557') }}" rel="stylesheet" type="text/css" media="all" />
+
+    <link href="{{ asset('client/cdn.shopify.com/s/files/1/2452/7833/t/2/assets/bootstrap.mine8b2.css?8981192451439604557') }}" rel="stylesheet" type="text/css" media="all" />
     <link href="{{ asset('client/cdn.shopify.com/s/files/1/2452/7833/t/2/assets/font-awesome.mine8b2.css?8981192451439604557') }}" rel="stylesheet" type="text/css" media="all" />
     <link href="{{ asset('client/cdn.shopify.com/s/files/1/2452/7833/t/2/assets/pe-icon-7-strokee8b2.css?8981192451439604557') }}" rel="stylesheet" type="text/css" media="all" />
     <link href="{{ asset('client/cdn.shopify.com/s/files/1/2452/7833/t/2/assets/helpere8b2.css?8981192451439604557') }}" rel="stylesheet" type="text/css" media="all" />
@@ -107,7 +106,7 @@
         window.Shopify.Checkout.apiHost = "my-pets-1.myshopify.com";
         window.Shopify.Checkout.rememberMeHost = "pay.shopify.com";
         window.Shopify.Checkout.rememberMeAccessToken = "c1dzTTdmcFROT3VndWlsaHBKMUhVTHBmMW1JcXcvZ0twWmVwdjVGeUl0NDRaRTg0LzZtSERtKzdoSFlHc3MyKy0tSlkydklNM0xKNW93Tk44dDNCWkVHQT09--6b7e6f17b1623581ac7c5b287c775950967b19e6";
-        window.Shopify.Checkout.sheetStyleSheetUrl = "\/\/cdn.shopify.com\/s\/assets\/shared\/sheet\/main-c38a91ed541a82b485cb4285b3651975cfbf14dd4524647e78a9715f2c79e28b.css";
+        window.Shopify.Checkout.sheetStyleSheetUrl = "{{ asset('client/cdn.shopify.com/s/assets/shared/sheet/main-c38a91ed541a82b485cb4285b3651975cfbf14dd4524647e78a9715f2c79e28b.css') }}";
     </script>
     <script defer="defer" integrity="sha256-ZRI5dhcNg0qs1pghd1RyYuSdOF07T7AJzQg4b/1ub+s=" crossorigin="anonymous" src="{{ asset('client/cdn.shopify.com/s/assets/storefront/express_buttons-65123976170d834aacd6982177547262e49d385d3b4fb009cd08386ffd6e6feb.js') }}"></script>
 
@@ -180,7 +179,7 @@
                     (new Image()).src = 'http://v.shopify.com/internal_errors/track?error=trekkie_load';
                 };
                 script.async = true;
-                script.src = '../cdn.shopify.com/s/javascripts/tricorder/trekkie.storefront.min97e4.js?v=2017.09.05.1';
+                script.src = "{{ asset('client/cdn.shopify.com/s/javascripts/tricorder/trekkie.storefront.min97e4.js?v=2017.09.05.1')}}";
                 var first = document.getElementsByTagName('script')[0];
                 first.parentNode.insertBefore(script, first);
             };
@@ -213,7 +212,7 @@
 
             var eventsListenerScript = document.createElement('script');
             eventsListenerScript.async = true;
-            eventsListenerScript.src = "../cdn.shopify.com/s/assets/shop_events_listener-f2c5800305098f0ebebdfa7d980c9abf56514c46d5305e97a7c476f7c9116163.js";
+            eventsListenerScript.src = "{{ asset('client/cdn.shopify.com/s/assets/shop_events_listener-f2c5800305098f0ebebdfa7d980c9abf56514c46d5305e97a7c476f7c9116163.js') }}";
             document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
 
         })();
@@ -329,7 +328,7 @@
         <div class="container">
             <div class="row">
                 <div class="notification-entry text-center col-xs-12">
-                    <p>All Featured Product 50% off <a href="">Buy Now</a></p>
+                    <p>All Featured Product 50% off <a href="{{ path('client_collection') }}">Buy Now</a></p>
                     <button class="notification-close-btn"><i class="pe-7s-close"></i></button>
                 </div>
             </div>
@@ -353,7 +352,7 @@
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="logo home-2">
 
-                                <a href=""><img src="../cdn.shopify.com/s/files/1/2452/7833/files/logo-final_medium65d6.png?v=1508386897" alt="My Pets 1" /></a>
+                                <a href="{{ path('index_user') }}"><img src="{{ asset('client/cdn.shopify.com/s/files/1/2452/7833/files/logo-final_medium65d6.png?v=1508386897') }}" alt="My Pets 1" /></a>
 
                             </div>
                         </div>
@@ -366,12 +365,12 @@
 
 
 
-                                        <li class="site-nav--has-dropdown site-nav--active"><a href="">Home</a>
+                                        <li class="site-nav--has-dropdown site-nav--active"><a href="{{ path('index_user') }}">Home</a>
                                             <ul class="dropdown-menus">
 
 
 
-                                                <li><a href="">home default</a></li>
+                                                <li><a href="{{ path('index_user') }}">home default</a></li>
 
 
 
@@ -385,25 +384,25 @@
 
 
 
-                                        <li class="site-nav--has-dropdown "><a href="">Shop</a>
+                                        <li class="site-nav--has-dropdown "><a href="{{ path('client_collection') }}">Shop</a>
                                             <ul class="dropdown-menus">
 
 
 
-                                                <li class="mega-menu-li"><a href="">instruments</a>
+                                                <li class="mega-menu-li"><a href="{{ path('client_collection') }}">instruments</a>
                                                     <ul>
 
-                                                        <li><a href="">Clipper Blade</a></li>
+                                                        <li><a href="{{ path('client_collection') }}">Clipper Blade</a></li>
 
-                                                        <li><a href="">Coarse-Toothed Comb</a></li>
+                                                        <li><a href="{{ path('client_collection') }}">Coarse-Toothed Comb</a></li>
 
-                                                        <li><a href="">Nail Clippers</a></li>
+                                                        <li><a href="{{ path('client_collection') }}">Nail Clippers</a></li>
 
-                                                        <li><a href="">Dog Rake</a></li>
+                                                        <li><a href="{{ path('client_collection') }}">Dog Rake</a></li>
 
-                                                        <li><a href="">Cat Toy</a></li>
+                                                        <li><a href="{{ path('client_collection') }}">Cat Toy</a></li>
 
-                                                        <li><a href="">Nail Grinder</a></li>
+                                                        <li><a href="{{ path('client_collection') }}">Nail Grinder</a></li>
 
                                                     </ul>
                                                 </li>
@@ -411,20 +410,20 @@
 
 
 
-                                                <li class="mega-menu-li"><a href="">Foods</a>
+                                                <li class="mega-menu-li"><a href="{{ path('client_collection') }}">Foods</a>
                                                     <ul>
 
-                                                        <li><a href="">Raw meats</a></li>
+                                                        <li><a href="{{ path('client_collection') }}">Raw meats</a></li>
 
-                                                        <li><a href="">canned </a></li>
+                                                        <li><a href="{{ path('client_collection') }}">canned </a></li>
 
-                                                        <li><a href="">freeze dried </a></li>
+                                                        <li><a href="{{ path('client_collection') }}">freeze dried </a></li>
 
-                                                        <li><a href="">kibble</a></li>
+                                                        <li><a href="{{ path('client_collection') }}">kibble</a></li>
 
-                                                        <li><a href="">dehydrated</a></li>
+                                                        <li><a href="{{ path('client_collection') }}">dehydrated</a></li>
 
-                                                        <li><a href="">Rx line</a></li>
+                                                        <li><a href="{{ path('client_collection') }}">Rx line</a></li>
 
                                                     </ul>
                                                 </li>
@@ -432,20 +431,20 @@
 
 
 
-                                                <li class="mega-menu-li"><a href="">Accessories</a>
+                                                <li class="mega-menu-li"><a href="{{ path('client_collection') }}">Accessories</a>
                                                     <ul>
 
-                                                        <li><a href="">Rabbit </a></li>
+                                                        <li><a href="{{ path('client_collection') }}">Rabbit </a></li>
 
-                                                        <li><a href="">Cattery Cages </a></li>
+                                                        <li><a href="{{ path('client_collection') }}">Cattery Cages </a></li>
 
-                                                        <li><a href="">Cat toy</a></li>
+                                                        <li><a href="{{ path('client_collection') }}">Cat toy</a></li>
 
-                                                        <li><a href="">Dog Gumboots</a></li>
+                                                        <li><a href="{{ path('client_collection') }}">Dog Gumboots</a></li>
 
-                                                        <li><a href="">Kong Extreme</a></li>
+                                                        <li><a href="{{ path('client_collection') }}">Kong Extreme</a></li>
 
-                                                        <li><a href="">show cage</a></li>
+                                                        <li><a href="{{ path('client_collection') }}">show cage</a></li>
 
                                                     </ul>
                                                 </li>
@@ -454,7 +453,7 @@
 
 
                                                 <li class="mega-menu-li image-menu">
-                                                    <a href="collections/food-pouches.html"><img src="../cdn.shopify.com/s/files/1/2452/7833/collections/menu_3a7ff871-b0ae-4e84-b30b-4b7ad2867b10_largececc.jpg?v=1508834824" alt="" /></a>
+                                                    <a href=""><img src="{{ asset('client/cdn.shopify.com/s/files/1/2452/7833/collections/menu_3a7ff871-b0ae-4e84-b30b-4b7ad2867b10_largececc.jpg?v=1508834824') }}" alt="" /></a>
                                                 </li>
 
 
@@ -464,27 +463,27 @@
 
 
 
-                                        <li class="site-nav--has-dropdown "><a href="blogs/services.html">Services</a>
+                                        <li class="site-nav--has-dropdown "><a href="">Services</a>
                                             <ul class="dropdown-menus">
 
 
 
-                                                <li><a href="blogs/services/full-grooming.html">Full Grooming</a></li>
+                                                <li><a href="">Full Grooming</a></li>
 
 
 
 
-                                                <li><a href="blogs/services/bath-and-dry.html">Bath and Dry</a></li>
+                                                <li><a href="">Bath and Dry</a></li>
 
 
 
 
-                                                <li><a href="blogs/services/styling.html">Styling</a></li>
+                                                <li><a href="">Styling</a></li>
 
 
 
 
-                                                <li><a href="blogs/services/medical-bath.html">Medical Bath</a></li>
+                                                <li><a href="">Medical Bath</a></li>
 
 
                                             </ul>
@@ -498,12 +497,12 @@
 
 
 
-                                        <li class=""><a href="">About</a></li>
+                                        <li class=""><a href="{{ path('client_about') }}">About</a></li>
 
 
 
 
-                                        <li class=""><a href="pages/contact.html">Contact</a></li>
+                                        <li class=""><a href="{{ path('client_contact') }}">Contact</a></li>
 
 
                                     </ul>
@@ -523,18 +522,20 @@
 
 
 
+
+
                                         {% if is_granted("ROLE_USER") %}
                                             <li><a href="{{ path('fos_user_profile_show') }}" >My Account : {{ app.user.username }}</a></li>
-                                            <li><a href="">My Wishlist</a></li>
-                                            <li><a href="">My Cart</a></li>
+
                                             <li><a href="{{ path('fos_user_security_logout') }}">Log Out</a></li>
 
                                         {% else %}
                                             <li><a href="{{ path('fos_user_security_login') }}">Login</a></li>
-                                            <li><a href="">My Wishlist</a></li>
-                                            <li><a href="">My Cart</a></li>
+                                            <li><a href="{{ path('fos_user_security_login') }}" >My Account</a></li>
 
                                         {% endif %}
+                                        <li><a href="{{ path('fos_user_security_login') }}">My Wishlist</a></li>
+                                        <li><a href="{{ path('client_cart') }}">My Cart</a></li>
 
 
 
@@ -555,7 +556,7 @@
 
                                     <div class="mini-cart-block">
                                         <div class="cart-link">
-                                            <a href="" class="cart-icon" title="Cart">
+                                            <a href="{{ path('client_cart') }}" class="cart-icon" title="Cart">
                                                 <i class="pe-7s-cart"></i>
                                                 <span class="cart-qty bigcounter">0</span>
                                             </a>
@@ -565,7 +566,7 @@
                                                 </ul>
                                                 <div class="cart-total"  style="display:none;">
                                                     <h6><span class="lbl">Total:</span> <span class="shopping-cart__total">$0.00</span></h6>
-                                                    <a href="" class="checkout-btn">Check Out</a>
+                                                    <a href="{{ path('client_cart') }}" class="checkout-btn">Check Out</a>
                                                 </div>
 
                                                 <div class="cart-total cart-empty-text"  style="display:block;">
@@ -591,10 +592,10 @@
 
 
 
-                                        <li class="site-nav--has-dropdown site-nav--active"><a href="">Home</a>
+                                        <li class="site-nav--has-dropdown site-nav--active"><a href="{{ path('index_user') }}">Home</a>
                                             <ul>
 
-                                                <li><a href="">home default</a></li>
+                                                <li><a href="{{ path('index_user') }}">home default</a></li>
 
                                                 <li><a href="https://my-pets-2.myshopify.com/">home box</a></li>
 
@@ -604,14 +605,14 @@
 
 
 
-                                        <li class="site-nav--has-dropdown"><a href="">Shop</a>
+                                        <li class="site-nav--has-dropdown"><a href="{{ path('client_collection') }}">Shop</a>
                                             <ul>
 
-                                                <li><a href="">instruments</a></li>
+                                                <li><a href="{{ path('client_collection') }}">instruments</a></li>
 
-                                                <li><a href="">Foods</a></li>
+                                                <li><a href="{{ path('client_collection') }}">Foods</a></li>
 
-                                                <li><a href="">Accessories</a></li>
+                                                <li><a href="{{ path('client_collection') }}">Accessories</a></li>
 
                                                 <li><a href="collections/food-pouches.html">Image</a></li>
 
@@ -643,12 +644,12 @@
 
 
 
-                                        <li ><a href="">About</a></li>
+                                        <li ><a href="{{ path('client_about') }}">About</a></li>
 
 
 
 
-                                        <li ><a href="pages/contact.html">Contact</a></li>
+                                        <li ><a href="{{ path('client_contact') }}">Contact</a></li>
 
 
                                     </ul>
@@ -690,7 +691,7 @@
                                 <div class="single-footer-widget logo">
                                     <div class="footer-logo">
 
-                                        <a href=""><img src="{{ asset('client/cdn.shopify.com/s/files/1/2452/7833/files/logo-final-white_mediumad80.png?v=1508409449') }}" alt="My Pets 1" /></a>
+                                        <a href="{{ path('index_user') }}"><img src="{{ asset('client/cdn.shopify.com/s/files/1/2452/7833/files/logo-final-white_mediumad80.png?v=1508409449') }}" alt="My Pets 1" /></a>
 
                                     </div>
                                     <div class="address">
@@ -754,13 +755,13 @@
                                         <ul>
 
 
-                                            <li><a href="">Login</a></li>
+                                            <li><a href="{{ path('gestion_user_homepage') }}">Login</a></li>
 
-                                            <li><a href="">My account</a></li>
+                                            <li><a href="{{ path('gestion_user_homepage') }}">My account</a></li>
 
                                             <li><a href="pages/wishlist.html">Wishlist</a></li>
 
-                                            <li><a href="">Checkout</a></li>
+                                            <li><a href="{{ path('client_cart') }}">Checkout</a></li>
 
                                         </ul>
                                     </div>
@@ -1260,7 +1261,7 @@
 
 
 
-    <script src="{{ asset('client/cdn.shopify.com/s/files/1/2452/7833/t/2/assets/ajax-carte8b2.js?8981192451439604557') }}" type="text/javascript"></script>
+    <script src="{{ asset('client//cdn.shopify.com/s/files/1/2452/7833/t/2/assets/ajax-carte8b2.js?8981192451439604557') }}" type="text/javascript"></script>
     <script>
         jQuery(function($) {
             ajaxCart.init({
@@ -1299,7 +1300,7 @@
                     </div>
                 </div>
                 <div class="modal-footer text-center">
-                    <a href="" class="">View Cart</a>
+                    <a href="{{ path('client_cart') }}" class="">View Cart</a>
                 </div>
             </div>
         </div>
