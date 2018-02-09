@@ -268,7 +268,7 @@
                                                         <span class="m-card-user__name m--font-weight-500">
 
                                                             {% if is_granted("ROLE_ADMIN") %}
-                                                                {{ app.user.username }}
+                                                            <a href="{{ path('fos_user_profile_show') }}"> {{ app.user.username }}</a>
 
                                                                           </a> </span>  <a href="#"
                                                                                            class="m-card-user__email m--font-weight-300 m-link">{{ app.user.email }}
