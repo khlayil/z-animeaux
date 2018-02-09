@@ -29,7 +29,6 @@ class ProfileUserType extends AbstractType
             ->add('city')
             ->add('zipCodes')
             ->add('state')
-            ->add('sexe')
             ->add('phoneNumber');
 
     }/**
