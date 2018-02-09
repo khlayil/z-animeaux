@@ -2,5 +2,53 @@
 
 {% block body %}
     {% trans_default_domain 'FOSUserBundle' %}
-    inscription done ,plz check your email for comfirmation link
+    <!-- BREADCRUMBS SETCTION START -->
+
+    <div class="breadcrumbs-section mb-100 fix">
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="breadcrumbs-inner text-center ptb-100">
+                            <h1 class="breadcrumbs-title">Create Account</h1>
+
+                            <nav class="" role="navigation" aria-label="breadcrumbs">
+                                <ul class="breadcrumb-list">
+                                    <li>
+                                        <a href="{{ path('index_user') }}" title="Back to the frontpage">Home</a>
+                                    </li>
+                                    <li>
+
+
+
+                                        <span>Create Account</span>
+
+
+                                    </li>
+                                </ul>
+                            </nav>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BREADCRUMBS SETCTION END -->
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3 text-center">
+                    <div class="account-area fix mb-10" style="font-size: large">
+                        inscription done ,plz check your email for comfirmation link
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
 {% endblock %}
