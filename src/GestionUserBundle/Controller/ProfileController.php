@@ -83,6 +83,7 @@ class ProfileController extends BaseController
 
             $event = new FormEvent($form, $request);
             $dispatcher->dispatch(FOSUserEvents::PROFILE_EDIT_SUCCESS, $event);
+            $form->$this->get("");
 
             $userManager->updateUser($user);
 
