@@ -1,0 +1,51 @@
+{% extends 'admin/layout.html.twig' %}
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block content %}
+
+    <div class="m-grid__item m-grid__item--fluid m-wrapper">
+
+        <div class="col-md-13">
+            <div class="m-portlet">
+                <div class="m-portlet__head">
+                    <div class="m-portlet__head-caption">
+                        <div class="m-portlet__head-title">
+						<span class="m-portlet__head-icon m--hide">
+						<i class="la la-gear"></i>
+						</span>
+                            <h3 class="m-portlet__head-text center-text">
+                                 personal information
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div style="    text-align: center;">
+                <h3>FULL NAME:
+                    <small class="text-muted">{{ app.user.username }}</small>
+                </h3>
+                <h3>E-MAIL:
+                    <small class="text-muted">{{ app.user.email }}</small>
+                </h3>
+                <h3>ADRESSE:
+                    <small class="text-muted">{{ app.user.adresse }}</small>
+                </h3>
+                <h3>STATE:
+                    <small class="text-muted">{{ app.user.state }}</small>
+                </h3>
+                <h3>CITY:
+                    <small class="text-muted">{{ app.user.city }}</small>
+                </h3>
+                <h3>ZIP CODE:
+                    <small class="text-muted">{{ app.user.zipCodes }}</small>
+                </h3>
+                <h3>PHONE NUMBER:
+                    <small class="text-muted">{{ app.user.phoneNumber }}</small>
+                </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock content %}

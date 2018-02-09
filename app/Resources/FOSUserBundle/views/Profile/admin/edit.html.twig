@@ -2,7 +2,7 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
 {% block content %}
-    <div class="col-md-10">
+    <div class="col-md-13">
         <div class="m-portlet">
             <div class="m-portlet__head">
                 <div class="m-portlet__head-caption">
@@ -43,11 +43,11 @@
                             </div>
                         </div>
                         <div class="form-group m-form__group row">
-                            <label class="col-lg-2 col-form-label">New password:</label>
+                            <label class="col-lg-2 col-form-label">Current password:</label>
                             <div class="col-lg-6">
                                 {{ form_widget(form.current_password, { 'attr': { 'class': 'form-control m-input' } }) }}
 
-                                <span class="m-form__help">We'll never ask you about your password</span>
+                                <span class="m-form__help">comfirme your password before validating the changes</span>
                             </div>
                         </div>
 
@@ -79,13 +79,7 @@
 
                             </div>
                         </div>
-                        <div class="form-group m-form__group row">
-                            <label class="col-lg-2 col-form-label">Profile picture:</label>
-                            <div class="col-lg-6">
-                                {{ form_widget(form.sexe, { 'attr': { 'class': 'form-control m-input' } }) }}
 
-                            </div>
-                        </div>
                         <div class="form-group m-form__group row">
                             <label class="col-lg-2 col-form-label">Zip code:</label>
                             <div class="col-lg-6">

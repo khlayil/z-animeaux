@@ -1,0 +1,124 @@
+{% extends 'client/layout.html.twig' %}
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block body %}
+    <div class="breadcrumbs-section mb-100 fix">
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="breadcrumbs-inner text-center ptb-100">
+                            <h1 class="breadcrumbs-title">Account</h1>
+
+                            <nav class="" role="navigation" aria-label="breadcrumbs">
+                                <ul class="breadcrumb-list">
+                                    <li>
+                                        <a href="{{ path('index_user') }}" title="Back to the frontpage">Home</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="" title="Back to the frontpage">/Profile</a>
+                                    </li>
+                                    <li>
+
+
+
+                                        <span>edit</span>
+
+
+                                    </li>
+                                </ul>
+                            </nav>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<main>
+    <div class="account-area fix mb-100">
+    <div class="col-sm-6 col-sm-offset-3 text-center">
+
+
+        <div id="AddAddress" class="form-vertical address-form" style="">
+                {{ form_start(form, { 'action': path('fos_user_profile_edit'), 'attr': { 'class': 'm-form m-form--label-align-right' } }) }}
+
+                <h4 class="new-address-title">Edit your account</h4>
+
+                <div class="form-fields">
+
+                    <div class="single-field">
+                        <label for="AddressCompanyNew">Full name </label>
+                        {{ form_widget(form.username, { 'attr': { 'class': 'input-full' } }) }}
+
+                    </div>
+                    <div class="single-field">
+                        <label for="AddressAddress1New">E-mail<span class="required">*</span></label>
+                        {{ form_widget(form.email, { 'attr': { 'class': 'input-full' } }) }}
+                    </div>
+
+                    <div class="single-field">
+                        <label for="AddressAddress2New">Current password<span class="required">*</span></label>
+                        {{ form_widget(form.current_password, { 'attr': { 'class': 'input-full' } }) }}
+                    </div>
+
+                    <div class="single-field">
+                        <label for="AddressAddress1New">Adresse<span class="required">*</span></label>
+                        {{ form_widget(form.adresse, { 'attr': { 'class': 'input-full' } }) }}
+                    </div>
+
+                    <div class="single-field">
+                        <label for="AddressAddress1New">Profile picture<span class="required">*</span></label>
+                        {{ form_widget(form.profilePic, { 'attr': { 'class': 'input-full' } }) }}
+                    </div>
+
+                    <div class="grid">
+                        <div class="grid__item large--one-half">
+                            <div class="single-field">
+                                <label for="AddressCityNew">City<span class="required">*</span></label>
+                                {{ form_widget(form.city, { 'attr': { 'class': 'input-full' } }) }}
+                            </div>
+                        </div>
+                        <div class="grid__item large--one-half">
+                            <div class="single-field">
+                                <label for="AddressPhoneNew">state<span class="required">*</span></label>
+                                {{ form_widget(form.state, { 'attr': { 'class': 'input-full' } }) }}
+                            </div>
+                        </div>
+                        <div class="grid__item large--one-half">
+                            <div class="single-field">
+                                <label for="AddressZipNew">Postal/Zip Code<span class="required">*</span></label>
+                                {{ form_widget(form.zipCodes, { 'attr': { 'class': 'input-full' } }) }}
+                            </div>
+                        </div>
+                        <div class="grid__item large--one-half">
+                            <div class="single-field">
+                                <label for="AddressPhoneNew">Phone<span class="required">*</span></label>
+                                {{ form_widget(form.phoneNumber, { 'attr': { 'class': 'input-full' } }) }}
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="form-action">
+
+                    <p><input type="submit" class="btn add-address" value="Edit"></p>
+                </div>
+                <hr>
+            {{ form_end(form) }}
+        </div>
+
+
+
+
+
+
+    </div>
+    </div>
+
+</main>
+{% endblock body %}

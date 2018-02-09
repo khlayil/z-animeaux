@@ -51,8 +51,8 @@
     <!-- CSS ================================================== -->
     <link href="{{ asset('client/cdn.shopify.com/s/files/1/2452/7833/t/2/assets/timber.scsse8b2.css?8981192451439604557') }}" rel="stylesheet" type="text/css" media="all" />
     <link href="{{ asset('client/cdn.shopify.com/s/files/1/2452/7833/t/2/assets/preloadere8b2.css?8981192451439604557') }}" rel="stylesheet" type="text/css" media="all" />
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" media="all" />
-    <link href="http://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet" type="text/css" media="all" />
+    {#<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" media="all" />
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet" type="text/css" media="all" />#}
     <link href="{{  asset('client/cdn.shopify.com/s/files/1/2452/7833/t/2/assets/bootstrap.mine8b2.css?8981192451439604557') }}" rel="stylesheet" type="text/css" media="all" />
     <link href="{{ asset('client/cdn.shopify.com/s/files/1/2452/7833/t/2/assets/font-awesome.mine8b2.css?8981192451439604557') }}" rel="stylesheet" type="text/css" media="all" />
     <link href="{{ asset('client/cdn.shopify.com/s/files/1/2452/7833/t/2/assets/pe-icon-7-strokee8b2.css?8981192451439604557') }}" rel="stylesheet" type="text/css" media="all" />
@@ -523,14 +523,18 @@
 
 
 
+                                        {% if is_granted("ROLE_USER") %}
+                                            <li><a href="" >My Account : {{ app.user.username }}</a></li>
+
+                                        {% else %}
+                                            <li><a href="">Login</a></li>
 
 
-                                        <li><a href="">Login</a></li>
-                                        <li><a href="">My Account</a></li>
+                                        {% endif %}
                                         <li><a href="">My Wishlist</a></li>
                                         <li><a href="">My Cart</a></li>
 
-                                        <li><a href="">Check Out</a></li>
+                                        <li><a href="{{ path('fos_user_security_logout') }}">Log Out</a></li>
 
                                     </ul>
                                 </li>
@@ -1254,7 +1258,7 @@
 
 
 
-    <script src="{{ asset('client//cdn.shopify.com/s/files/1/2452/7833/t/2/assets/ajax-carte8b2.js?8981192451439604557') }}" type="text/javascript"></script>
+    <script src="{{ asset('client/cdn.shopify.com/s/files/1/2452/7833/t/2/assets/ajax-carte8b2.js?8981192451439604557') }}" type="text/javascript"></script>
     <script>
         jQuery(function($) {
             ajaxCart.init({
