@@ -483,7 +483,7 @@
 
 
 
-                                                <li><a href="">Medical Bath</a></li>
+                                                <li><a href="{{ path('_list_vet_offre') }}" title="">veterinary help</a></li>
 
 
                                             </ul>
@@ -524,16 +524,20 @@
 
 
 
-                                        {% if is_granted("ROLE_USER") %}
+                                        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                                             <li><a href="{{ path('fos_user_profile_show') }}" >My Account : {{ app.user.username }}</a></li>
 
                                             <li><a href="{{ path('fos_user_security_logout') }}">Log Out</a></li>
-
                                         {% else %}
                                             <li><a href="{{ path('fos_user_security_login') }}">Login</a></li>
                                             <li><a href="{{ path('fos_user_security_login') }}" >My Account</a></li>
 
                                         {% endif %}
+                                        {% if is_granted("ROLE_VETE") %}
+
+                                            <li><a href="{{ path('_view_annonce') }}">Mes Annonces</a></li>
+                                        {% endif %}
+
                                         <li><a href="{{ path('fos_user_security_login') }}">My Wishlist</a></li>
                                         <li><a href="{{ path('client_cart') }}">My Cart</a></li>
 
@@ -631,7 +635,7 @@
 
                                                 <li><a href="blogs/services/styling.html">Styling</a></li>
 
-                                                <li><a href="blogs/services/medical-bath.html">Medical Bath</a></li>
+                                                <li><a href="{{ path('_list_vet_offre') }}" title="">veterinary help</a></li>
 
                                             </ul>
                                         </li>
@@ -740,7 +744,7 @@
 
                                             <li><a href="blogs/services/styling.html" title="">Styling</a></li>
 
-                                            <li><a href="blogs/services/medical-bath.html" title="">Medical Bath</a></li>
+                                            <li><a href="{{ path('_list_vet_offre') }}" title="">veterinary help</a></li>
 
                                         </ul>
                                     </div>
