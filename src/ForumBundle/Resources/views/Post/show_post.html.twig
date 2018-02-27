@@ -25,7 +25,7 @@
                     <li><a href="{{ path('index_user') }}">Zanimeaux</a></li>
 
 
-                    <li><a href="{{ path('list_post') }}">Forum</a></li>
+                    <li><a href="{{ path('forum_homepage') }}">Forum</a></li>
 
 
                     <li class="active">Global Topic in {{ post.rubrique.name }} Category</li>
@@ -204,11 +204,16 @@
 
             <div class="action-bar">
                 <div class="action-bar--pagination clearfix">
+                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
 
                     <a href="{{ path('add_comment',{'id':post.id}) }}" class="action-bar-pagination--new post-icon">
                         <i class="fa fm fa-mail-reply"></i>Post Reply
                     </a>
-
+                    {% else %}
+                        <a href="{{ path('add_comment',{'id':post.id})}}" class="action-bar-pagination--new post-icon">
+                            <i class="fa fm fa-lock"></i>Sign in to post a comment
+                        </a>
+                    {% endif %}
 
 
 
