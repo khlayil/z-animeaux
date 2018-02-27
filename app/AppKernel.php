@@ -22,6 +22,9 @@ class AppKernel extends Kernel
             new ClientBundle\ClientBundle(),
             new AccessoryBundle\AccessoryBundle(),
             new GestionServiceBundle\GestionServiceBundle(),
+            new ForumBundle\ForumBundle(),
+            new CMEN\GoogleChartsBundle\CMENGoogleChartsBundle(),
+
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

@@ -1,0 +1,225 @@
+{% extends 'forum/layout.html.twig' %}
+
+{% block title %}
+
+{% endblock %}
+
+
+
+
+
+
+
+
+{% block content %}
+
+
+<div id="topic">
+    <div class="container">
+        <div class="topic--body">
+            <!-- Topic Breadcrumb Start -->
+            <div class="topic--breadcrumb clearfix">
+                <ol class="breadcrumb">
+                    <li><i class="fa fa-home"></i></li>
+
+                    <li><a href="{{ path('index_user') }}">Zanimeaux</a></li>
+
+
+                    <li><a href="{{ path('list_post') }}">Forum</a></li>
+
+
+                    <li class="active">Global Topic in {{ post.rubrique.name }} Category</li>
+                </ol>
+            </div>
+            <!-- Topic Breadcrumb End -->
+
+
+            <div class="topic--list">
+                <div class="topic-list--header clearfix">
+					<span class="topic-list-header--title">
+					    					        Global Topic in {{ post.rubrique.name }} Category
+				        				    </span>
+                </div>
+                <div class="topic-list--content">
+                    <ul>
+                        <li>
+
+                            <div id="p4" class="topic--post post has-profile">
+                                <dl class="postprofile" id="profile4">
+                                    <dt class="has-profile-rank no-avatar">
+                                        <div class="avatar-container">
+                                        </div>
+                                        <a href="./memberlist.php?style=5&amp;mode=viewprofile&amp;u=2"
+                                           style="color: #AA0000;"
+                                           class="username-coloured">{{ post.user.username }}</a></dt>
+
+                                    <dd class="profile-rank">role</dd>
+                                    <dd class="profile-posts"><strong>Response :</strong> <a
+                                                href="./search.php?style=5&amp;author_id=2&amp;sr=posts">{{ post.nbcomment }} </a>
+                                    </dd>
+                                    <dd class="profile-joined"><strong>Posted:</strong> {{ post.date | date }}</dd>
+
+
+                                </dl>
+
+                                <div class="postbody">
+                                    <div id="post_content4">
+
+                                        <h3 class="first"><a href="#post_content4">{{ post.title }}</a></h3>
+
+                                        <ul class="post-buttons">
+                                            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+
+                                            {% if post.user.id == app.user.id %}
+                                            <li>
+                                                <a href="{{ path('delete_post',{'id':post.id}) }}"
+                                                   title="delete this post" class="button icon-button report-icon"><i
+                                                            class="fa fa-trash"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ path('edit_post',{'id':post.id}) }}"
+                                                   title="edit this post" class="button icon-button quote-icon"><i
+                                                            class="fa fa-edit"></i></a>
+                                            </li>
+                                            <li class="responsive-menu hidden dropdown-container"><a
+                                                        href="javascript:void(0);"
+                                                        class="responsive-menu-link dropdown-toggle">&nbsp;</a>
+                                                <div class="dropdown hidden">
+                                                    <div class="pointer">
+                                                        <div class="pointer-inner"></div>
+                                                    </div>
+                                                    <ul class="dropdown-contents"></ul>
+                                                </div>
+                                            </li>
+                                            {% endif %}
+
+                                            {% else %}
+                                                <li>
+                                                    <a href="{{ path('add_comment',{'id':post.id}) }}"
+                                                       title="edit this post" class="button icon-button quote-icon"><i
+                                                                class="fa fa-quote-left"></i></a>
+                                                </li>
+
+                                            {% endif %}
+
+                                        </ul>
+
+                                        <p class="author"><span class="responsive-hide">by <strong><a
+                                                            href="./memberlist.php?style=5&amp;mode=viewprofile&amp;u=2"
+                                                            style="color: #AA0000;"
+                                                            class="username-coloured"> {{ post.user.username }}</a></strong> » </span>
+                                        </p>
+
+
+                                        <div class="content">Hello!<br>
+                                            <br>
+                                            {{ post.content }}</div>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            {% for c in comments %}
+
+                <div class="topic--list" style="margin-left: 5%;">
+
+                    <div class="topic-list--content">
+                        <ul>
+                            <li>
+
+                                <div id="p4" class="topic--post post has-profile">
+
+
+                                    <div class="postbody">
+                                        <div id="post_content4">
+
+                                            <h3 class="first"><a href="#post_content4">{{ c.poster }}</a></h3>
+                                            <ul class="post-buttons">
+                                                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+
+                                                {% if c.poster.id == app.user.id %}
+                                                    <li>
+                                                        <a href="{{ path('delete_comment',{'id':c.id}) }}"
+                                                           title="delete this post" class="button icon-button report-icon"><i
+                                                                    class="fa fa-trash"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ path('edit_comment',{'id':c.id}) }}"
+                                                           title="edit this post" class="button icon-button quote-icon"><i
+                                                                    class="fa fa-edit"></i></a>
+                                                    </li>
+                                                    <li class="responsive-menu hidden dropdown-container"><a
+                                                                href="javascript:void(0);"
+                                                                class="responsive-menu-link dropdown-toggle">&nbsp;</a>
+                                                        <div class="dropdown hidden">
+                                                            <div class="pointer">
+                                                                <div class="pointer-inner"></div>
+                                                            </div>
+                                                            <ul class="dropdown-contents"></ul>
+                                                        </div>
+                                                    </li>
+                                                {% endif %}
+
+
+
+                                                {% endif %}
+
+                                            </ul>
+
+                                            <p class="author"><span class="responsive-hide">Posted : <strong><a
+                                                                href="./memberlist.php?style=5&amp;mode=viewprofile&amp;u=2"
+                                                                style="color: #AA0000;"
+                                                                class="username-coloured"> </a></strong> {{ c.date |date }} </span>
+                                            </p>
+
+
+                                            <div class="content"><br>
+                                                <br>
+                                                {{ c.content }}</div>
+
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            {% endfor %}
+
+
+            <div class="action-bar">
+                <div class="action-bar--pagination clearfix">
+
+                    <a href="{{ path('add_comment',{'id':post.id}) }}" class="action-bar-pagination--new post-icon">
+                        <i class="fa fm fa-mail-reply"></i>Post Reply
+                    </a>
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+            {% endblock %}
+

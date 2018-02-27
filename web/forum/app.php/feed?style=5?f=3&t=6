@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-gb">
+	<link rel="self" type="application/atom+xml" href="http://forumstyle.us/forumus/app.php/feed?style=5" />
+
+	<title>ForumUS</title>
+	<subtitle>Responsive phpBB 3.1 &amp; 3.2 Style / Theme</subtitle>
+	<link href="http://forumstyle.us/forumus/index.php" />
+	<updated>2017-06-22T10:17:43</updated>
+
+	<author><name><![CDATA[ForumUS]]></name></author>
+	<id>http://forumstyle.us/forumus/app.php/feed?style=5</id>
+
+		<entry>
+		<author><name><![CDATA[admin]]></name></author>
+		<updated>2017-06-22T10:17:43</updated>
+
+		<published>2017-06-22T10:17:43</published>
+		<id>http://forumstyle.us/forumus/viewtopic.php?style=5&amp;t=7&amp;p=7#p7</id>
+		<link href="http://forumstyle.us/forumus/viewtopic.php?style=5&amp;t=7&amp;p=7#p7"/>
+		<title type="html"><![CDATA[General Examples • Basic Poll]]></title>
+
+					<category term="General Examples" scheme="http://forumstyle.us/forumus/viewforum.php?f=3" label="General Examples"/>
+		
+		<content type="html" xml:base="http://forumstyle.us/forumus/viewtopic.php?style=5&amp;t=7&amp;p=7#p7"><![CDATA[
+Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.<p>Statistics: Posted by <a href="http://forumstyle.us/forumus/memberlist.php?style=5&amp;mode=viewprofile&amp;u=2">admin</a> — Thu Jun 22, 2017 10:17 am</p><hr />
+]]></content>
+	</entry>
+		<entry>
+		<author><name><![CDATA[admin]]></name></author>
+		<updated>2017-06-22T10:15:15</updated>
+
+		<published>2017-06-22T10:15:15</published>
+		<id>http://forumstyle.us/forumus/viewtopic.php?style=5&amp;t=6&amp;p=6#p6</id>
+		<link href="http://forumstyle.us/forumus/viewtopic.php?style=5&amp;t=6&amp;p=6#p6"/>
+		<title type="html"><![CDATA[General Examples • Sticky Topic]]></title>
+
+					<category term="General Examples" scheme="http://forumstyle.us/forumus/viewforum.php?f=3" label="General Examples"/>
+		
+		<content type="html" xml:base="http://forumstyle.us/forumus/viewtopic.php?style=5&amp;t=6&amp;p=6#p6"><![CDATA[
+Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.<p>Statistics: Posted by <a href="http://forumstyle.us/forumus/memberlist.php?style=5&amp;mode=viewprofile&amp;u=2">admin</a> — Thu Jun 22, 2017 10:15 am</p><hr />
+]]></content>
+	</entry>
+		<entry>
+		<author><name><![CDATA[admin]]></name></author>
+		<updated>2017-06-22T10:13:30</updated>
+
+		<published>2017-06-22T10:13:30</published>
+		<id>http://forumstyle.us/forumus/viewtopic.php?style=5&amp;t=5&amp;p=5#p5</id>
+		<link href="http://forumstyle.us/forumus/viewtopic.php?style=5&amp;t=5&amp;p=5#p5"/>
+		<title type="html"><![CDATA[General Examples • Locked Topic]]></title>
+
+					<category term="General Examples" scheme="http://forumstyle.us/forumus/viewforum.php?f=3" label="General Examples"/>
+		
+		<content type="html" xml:base="http://forumstyle.us/forumus/viewtopic.php?style=5&amp;t=5&amp;p=5#p5"><![CDATA[
+Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.<p>Statistics: Posted by <a href="http://forumstyle.us/forumus/memberlist.php?style=5&amp;mode=viewprofile&amp;u=2">admin</a> — Thu Jun 22, 2017 10:13 am</p><hr />
+]]></content>
+	</entry>
+		<entry>
+		<author><name><![CDATA[admin]]></name></author>
+		<updated>2017-06-22T09:38:22</updated>
+
+		<published>2017-06-22T09:38:22</published>
+		<id>http://forumstyle.us/forumus/viewtopic.php?style=5&amp;t=4&amp;p=4#p4</id>
+		<link href="http://forumstyle.us/forumus/viewtopic.php?style=5&amp;t=4&amp;p=4#p4"/>
+		<title type="html"><![CDATA[Informations • Global Topic in Information Category]]></title>
+
+					<category term="Informations" scheme="http://forumstyle.us/forumus/viewforum.php?f=2" label="Informations"/>
+		
+		<content type="html" xml:base="http://forumstyle.us/forumus/viewtopic.php?style=5&amp;t=4&amp;p=4#p4"><![CDATA[
+Hello!<br><br>This forum is a preview forum.<p>Statistics: Posted by <a href="http://forumstyle.us/forumus/memberlist.php?style=5&amp;mode=viewprofile&amp;u=2">admin</a> — Thu Jun 22, 2017 9:38 am</p><hr />
+]]></content>
+	</entry>
+		<entry>
+		<author><name><![CDATA[admin]]></name></author>
+		<updated>2017-06-22T09:37:39</updated>
+
+		<published>2017-06-22T09:37:39</published>
+		<id>http://forumstyle.us/forumus/viewtopic.php?style=5&amp;t=3&amp;p=3#p3</id>
+		<link href="http://forumstyle.us/forumus/viewtopic.php?style=5&amp;t=3&amp;p=3#p3"/>
+		<title type="html"><![CDATA[Informations • Announcement]]></title>
+
+					<category term="Informations" scheme="http://forumstyle.us/forumus/viewforum.php?f=2" label="Informations"/>
+		
+		<content type="html" xml:base="http://forumstyle.us/forumus/viewtopic.php?style=5&amp;t=3&amp;p=3#p3"><![CDATA[
+Example Announcement<p>Statistics: Posted by <a href="http://forumstyle.us/forumus/memberlist.php?style=5&amp;mode=viewprofile&amp;u=2">admin</a> — Thu Jun 22, 2017 9:37 am</p><hr />
+]]></content>
+	</entry>
+		<entry>
+		<author><name><![CDATA[admin]]></name></author>
+		<updated>2017-06-22T09:36:48</updated>
+
+		<published>2017-06-22T09:36:48</published>
+		<id>http://forumstyle.us/forumus/viewtopic.php?style=5&amp;t=2&amp;p=2#p2</id>
+		<link href="http://forumstyle.us/forumus/viewtopic.php?style=5&amp;t=2&amp;p=2#p2"/>
+		<title type="html"><![CDATA[Informations • Welcome to phpBB]]></title>
+
+					<category term="Informations" scheme="http://forumstyle.us/forumus/viewforum.php?f=2" label="Informations"/>
+		
+		<content type="html" xml:base="http://forumstyle.us/forumus/viewtopic.php?style=5&amp;t=2&amp;p=2#p2"><![CDATA[
+This is an example post in your phpBB3 installation. Everything seems to be working. You may delete this post if you like and continue to set up your board. During the installation process your first category and your first forum are assigned an appropriate set of permissions for the predefined usergroups administrators, bots, global moderators, guests, registered users and registered COPPA users. If you also choose to delete your first category and your first forum, do not forget to assign permissions for all these usergroups for all new categories and forums you create. It is recommended to rename your first category and your first forum and copy permissions from these while creating new categories and forums. Have fun!<p>Statistics: Posted by <a href="http://forumstyle.us/forumus/memberlist.php?style=5&amp;mode=viewprofile&amp;u=2">admin</a> — Thu Jun 22, 2017 9:36 am</p><hr />
+]]></content>
+	</entry>
+	</feed>
