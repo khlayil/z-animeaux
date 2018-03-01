@@ -517,18 +517,22 @@
                         <div class="col-md-2 col-sm-6 col-xs-12">
                             <ul class="menu-list text-right">
                                 <!-- Account Start -->
-                                <li><a href="#"><i class="pe-7s-add-user"></i></a>
-                                    <ul class="account-menu">
 
 
 
 
 
                                         {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                                            <li><a href="{{ path('fos_user_profile_show') }}" >My Account : {{ app.user.username }}</a></li>
+                                <li><a href="#"><i class="pe-7s-user"></i></a>
+                                    <ul class="account-menu">
+
+                                    <li><a href="{{ path('fos_user_profile_show') }}" >My Account : {{ app.user.username }}</a></li>
 
                                             <li><a href="{{ path('fos_user_security_logout') }}">Log Out</a></li>
                                         {% else %}
+                                        <li><a href="#"><i class="pe-7s-add-user"></i></a>
+                                            <ul class="account-menu">
+
                                             <li><a href="{{ path('fos_user_security_login') }}">Login</a></li>
                                             <li><a href="{{ path('fos_user_security_login') }}" >My Account</a></li>
 

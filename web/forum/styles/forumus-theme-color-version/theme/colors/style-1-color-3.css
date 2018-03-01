@@ -115,12 +115,12 @@ input.button2,
 #boardrules-categories + #container .boardrules-header,
 .quick--reply .quickreply-title,
 .mchat--content > h2:first-child {
-    background-color: #54cd38;
+    background-color: #00B249;
 }
 
 /* BACKGROUND-COLOR: DARKER */
 #copyright {
-    background-color: #54cd38;
+    background-color: #00B249;
 }
 
 /* BORDER-COLOR */
@@ -148,11 +148,11 @@ input.button2,
 #footerSubscribeForm button[type="submit"],
 .back-to-top button,
 fieldset.submit-buttons input:hover {
-    background-color: #54cd38;
+    background-color: #00B249;
 }
 
 /* BORDER-COLOR */
 .header--search-bar .input-group-btn .btn:hover,
 .header--search-bar .input-group-btn .btn:focus {
-    border-color: #54cd38;
+    border-color: #00B249;
 }
