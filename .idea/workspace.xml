@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e9f9115-6bea-4ef9-85d5-6ca6c563826d" name="Default" comment="forum template integration ,cruds,stat bundle">
+    <list default="true" id="8e9f9115-6bea-4ef9-85d5-6ca6c563826d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/email/contact_vet/contact_vet.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/loader.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/client/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/client/show.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/admin/layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/admin/layout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/client/layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/client/layout.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/forum/layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/forum/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ForumBundle/Resources/views/Post/show_post.html.twig" afterPath="$PROJECT_DIR$/src/ForumBundle/Resources/views/Post/show_post.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GestionUserBundle/Repository/UserRepository.php" afterPath="$PROJECT_DIR$/src/GestionUserBundle/Repository/UserRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GestionUserBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/GestionUserBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GestionUserBundle/Controller/ProfileController.php" afterPath="$PROJECT_DIR$/src/GestionUserBundle/Controller/ProfileController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GestionUserBundle/Resources/views/admin/index.html.twig" afterPath="$PROJECT_DIR$/src/GestionUserBundle/Resources/views/admin/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/script/script.js" afterPath="$PROJECT_DIR$/web/admin/script/script.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,80 +27,105 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GestionUserBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2280">
+              <caret line="127" column="52" lean-forward="false" selection-start-line="127" selection-start-column="52" selection-end-line="127" selection-end-column="65" />
+              <folding>
+                <element signature="e#47#107#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="security.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="27" column="40" lean-forward="false" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="add_rebrique.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ForumBundle/Resources/views/Rebrique/add_rebrique.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="43" column="67" lean-forward="false" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
+            <state relative-caret-position="0">
+              <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RubriqueController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ForumBundle/Controller/RubriqueController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="25" column="57" lean-forward="false" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
-              <folding>
-                <element signature="e#42#74#0#PHP" expanded="true" />
-                <element signature="e#786#826#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PostController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ForumBundle/Controller/PostController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="72" column="53" lean-forward="false" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
-              <folding>
-                <element signature="e#42#73#0#PHP" expanded="true" />
-                <element signature="e#2417#2450#0#PHP" expanded="true" />
-                <element signature="e#2856#2889#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RubriqueType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ForumBundle/Form/RubriqueType.php">
+      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/forum/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
-              <caret line="16" column="55" lean-forward="false" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ForumBundle/Form/PostType.php">
+      <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GestionUserBundle/Controller/AdminController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="47" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show_post.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ForumBundle/Resources/views/Post/show_post.html.twig">
+      <file leaf-file-name="SecurityController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GestionUserBundle/Controller/SecurityController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="105" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+            <state relative-caret-position="57">
+              <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
               <folding>
-                <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="e#47#114#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_post.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ForumBundle/Resources/views/Post/list_post.html.twig">
+      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/client/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="72" column="46" lean-forward="false" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
+            <state relative-caret-position="6232">
+              <caret line="328" column="12" lean-forward="false" selection-start-line="328" selection-start-column="12" selection-end-line="330" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="consulter_vet_annonce.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GestionServiceBundle/Resources/views/Veterinaire/consulter_vet_annonce.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="consulter_vet_offre.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GestionServiceBundle/Resources/views/Veterinaire/consulter_vet_offre.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2869">
+              <caret line="151" column="105" lean-forward="false" selection-start-line="151" selection-start-column="105" selection-end-line="151" selection-end-column="105" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GestionUserBundle.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GestionUserBundle/GestionUserBundle.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -105,20 +135,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>by</find>
-      <find>}</find>
-      <find>{{</find>
-      <find>6</find>
-      <find>postin</find>
-      <find>#top</find>
-      <find>add</find>
-      <find>{%</find>
-      <find>icon-b</find>
-      <find>delete</find>
-      <find>icon</find>
-      <find>rss</find>
-      <find>colors</find>
-      <find>total</find>
       <find>count</find>
       <find>tota</find>
       <find>.count</find>
@@ -126,28 +142,33 @@
       <find>new t</find>
       <find>nbm</find>
       <find>topic-lis</find>
-      <find>new</find>
       <find>top ca</find>
       <find>post r</find>
       <find>rubr</find>
       <find>butto</find>
-      <find>post</find>
       <find>&lt;h3</find>
       <find>if is</find>
       <find>edit</find>
+      <find>new</find>
+      <find>list_posts_in_rubrique</find>
+      <find>backgr</find>
+      <find>background-po</find>
+      <find>add-use</find>
+      <find>user pic</find>
+      <find>ma</find>
+      <find>map</find>
+      <find>desc</find>
+      <find>delete</find>
+      <find>mailer</find>
+      <find>khlayil</find>
+      <find>mail</find>
+      <find>descr</find>
+      <find>post</find>
+      <find>buy n</find>
     </findStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="c dump-autoload" />
-      <command text="s doctrine:schema:update" />
-      <command text="s doctrine:schema:update --force " />
-      <command text="s server:run " />
-      <command text="s doctrine:schema:update --force " />
-      <command text="s server:run " />
-      <command text="c dump-autoload" />
-      <command text="s server:run " />
-      <command text="s doctrine:schema:update" />
       <command text="s doctrine:schema:update --force " />
       <command text="s server:run " />
       <command text="s doctrine:schema:update --force " />
@@ -164,6 +185,15 @@
       <command text="s cache:clear" />
       <command text="s server:run " />
       <command text="s doctrine:schema:update --force " />
+      <command text="s server:run " />
+      <command text="s doctrine:schema:update" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s server:run " />
+      <command text="s cache:clear" />
+      <command text="c clear-cache" />
+      <command text="s server:run " />
+      <command text="c clear-cache" />
+      <command text="s server:run " />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -177,37 +207,9 @@
       <GitPushTagMode />
     </option>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/config/security.yml" />
-        <option value="$PROJECT_DIR$/app/Resources/views/client/layout.html.twig" />
-        <option value="$PROJECT_DIR$/web/client/cdn.shopify.com/s/files/1/2452/7833/t/2/assets/jquery.geocomplete.js" />
-        <option value="$PROJECT_DIR$/src/GestionUserBundle/Controller/AdminController.php" />
-        <option value="$PROJECT_DIR$/src/GestionServiceBundle/Entity/Ann_Cabinet_Vet.php" />
-        <option value="$PROJECT_DIR$/src/GestionServiceBundle/Form/Ann_Cabinet_VetType.php" />
-        <option value="$PROJECT_DIR$/src/GestionServiceBundle/Resources/views/Veterinaire/list_vet_offre.html.twig" />
-        <option value="$PROJECT_DIR$/src/GestionServiceBundle/Resources/views/Veterinaire/consulter_vet_offre.html.twig" />
-        <option value="$PROJECT_DIR$/src/GestionServiceBundle/Resources/views/Veterinaire/add_annonce.html.twig" />
-        <option value="$PROJECT_DIR$/src/GestionServiceBundle/Resources/views/Veterinaire/edit_annonce.html.twig" />
-        <option value="$PROJECT_DIR$/src/GestionServiceBundle/Resources/views/Veterinaire/view_annonce.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/web/admin/script/datatable.js" />
-        <option value="$PROJECT_DIR$/app/Resources/views/admin/layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/GestionServiceBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/GestionServiceBundle/Resources/views/Veterinaire/list_vet_annonce_demande.html.twig" />
-        <option value="$PROJECT_DIR$/src/GestionServiceBundle/Repository/Ann_Cabinet_VetRepository.php" />
-        <option value="$PROJECT_DIR$/src/GestionServiceBundle/Resources/views/Veterinaire/list_vet_annonce.html.twig" />
-        <option value="$PROJECT_DIR$/src/GestionUserBundle/Controller/SecurityController.php" />
-        <option value="$PROJECT_DIR$/src/GestionUserBundle/Form/RegistrationUserType.php" />
-        <option value="$PROJECT_DIR$/src/GestionServiceBundle/Controller/VeterinaireController.php" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/src/GestionUserBundle/Resources/views/admin/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/GestionUserBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/ForumBundle/Entity/Rebrique.php" />
         <option value="$PROJECT_DIR$/web/forum/styles/forumus-theme-color-version/theme/content.css" />
         <option value="$PROJECT_DIR$/web/forum/styles/forumus-theme-color-version/theme/responsive.css?assets_version=3.css" />
@@ -216,24 +218,49 @@
         <option value="$PROJECT_DIR$/src/ForumBundle/Resources/views/Comment/add_comment.html.twig" />
         <option value="$PROJECT_DIR$/src/ForumBundle/Resources/views/Comment/edit_comment.html.twig" />
         <option value="$PROJECT_DIR$/src/ForumBundle/Entity/Comment.php" />
-        <option value="$PROJECT_DIR$/src/ForumBundle/Entity/Post.php" />
         <option value="$PROJECT_DIR$/src/ForumBundle/Entity/Rubrique.php" />
         <option value="$PROJECT_DIR$/src/GestionUserBundle/Repository/UserRepository.php" />
-        <option value="$PROJECT_DIR$/src/ForumBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/ForumBundle/Controller/RebriqueController.php" />
         <option value="$PROJECT_DIR$/src/ForumBundle/Form/PostType.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/forum/layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/ForumBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/ForumBundle/Controller/CommentController.php" />
         <option value="$PROJECT_DIR$/src/ForumBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/ForumBundle/Form/RubriqueType.php" />
         <option value="$PROJECT_DIR$/src/ForumBundle/Resources/views/Post/add_post.html.twig" />
         <option value="$PROJECT_DIR$/src/ForumBundle/Resources/views/Rebrique/add_rebrique.html.twig" />
-        <option value="$PROJECT_DIR$/src/ForumBundle/Controller/RubriqueController.php" />
         <option value="$PROJECT_DIR$/src/ForumBundle/Resources/views/Post/edit_post.html.twig" />
-        <option value="$PROJECT_DIR$/src/ForumBundle/Controller/PostController.php" />
-        <option value="$PROJECT_DIR$/src/ForumBundle/Resources/views/Post/show_post.html.twig" />
+        <option value="$PROJECT_DIR$/src/ForumBundle/Controller/RubriqueController.php" />
+        <option value="$PROJECT_DIR$/src/ForumBundle/Resources/views/Rebrique/edit_rebrique.html.twig" />
+        <option value="$PROJECT_DIR$/src/ForumBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/ForumBundle/Resources/views/Post/list_post.html.twig" />
+        <option value="$PROJECT_DIR$/src/ForumBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/ForumBundle/Resources/views/Post/list_posts_in_rubrique.html.twig" />
+        <option value="$PROJECT_DIR$/web/forum/styles/forumus-theme-color-version/theme/colors/style-1-color-3.css" />
+        <option value="$PROJECT_DIR$/web/forum/styles/forumus-theme-color-version/theme/forumus-style.css" />
+        <option value="$PROJECT_DIR$/src/ForumBundle/Resources/views/Post/show_post.html.twig" />
+        <option value="$PROJECT_DIR$/src/ForumBundle/Entity/Post.php" />
+        <option value="$PROJECT_DIR$/src/ForumBundle/Entity/PostLike.php" />
+        <option value="$PROJECT_DIR$/src/ForumBundle/Controller/PostController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/client/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/GestionServiceBundle/Resources/views/Veterinaire/view_annonce.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/email/contact_vet/contact_vet.html.twig" />
+        <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcherInterface.php" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/GestionServiceBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/GestionServiceBundle/Controller/VeterinaireController.php" />
+        <option value="$PROJECT_DIR$/src/GestionServiceBundle/Resources/views/Veterinaire/consulter_vet_offre.html.twig" />
+        <option value="$PROJECT_DIR$/web/loader.js" />
+        <option value="$PROJECT_DIR$/src/GestionUserBundle/Resources/views/admin/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/ForumBundle/Repository/RubriqueRepository.php" />
+        <option value="$PROJECT_DIR$/src/ForumBundle/Repository/CommentRepository.php" />
+        <option value="$PROJECT_DIR$/src/ForumBundle/Repository/PostRepository.php" />
+        <option value="$PROJECT_DIR$/src/GestionUserBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/GestionUserBundle/Controller/SecurityController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/client/layout.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/views/forum/layout.html.twig" />
       </list>
     </option>
   </component>
@@ -285,6 +312,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -295,6 +323,38 @@
             <path>
               <item name="zanimeau" type="b2602c69:ProjectViewProjectNode" />
               <item name="zanimeau" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="zanimeau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zanimeau" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="zanimeau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zanimeau" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="zanimeau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zanimeau" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="zanimeau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zanimeau" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="forum" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="zanimeau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zanimeau" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -302,20 +362,6 @@
               <item name="zanimeau" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="ForumBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="zanimeau" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zanimeau" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ForumBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="zanimeau" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zanimeau" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ForumBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Form" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="zanimeau" type="b2602c69:ProjectViewProjectNode" />
@@ -331,24 +377,6 @@
               <item name="ForumBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="zanimeau" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zanimeau" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ForumBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Default" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="zanimeau" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zanimeau" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ForumBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Post" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="zanimeau" type="b2602c69:ProjectViewProjectNode" />
@@ -359,11 +387,64 @@
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Rebrique" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="zanimeau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zanimeau" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="GestionUserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="zanimeau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zanimeau" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="GestionUserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="zanimeau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zanimeau" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="zanimeau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zanimeau" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="forum" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="zanimeau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zanimeau" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="forum" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="styles" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="zanimeau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zanimeau" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="forum" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="styles" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="forumus-default-version" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="zanimeau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zanimeau" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="forum" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="styles" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="forumus-default-version" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="theme" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="zanimeau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zanimeau" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="uploads" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -371,21 +452,22 @@
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/jkn" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/admin" />
-      <recent name="$PROJECT_DIR$/src/GestionUserBundle/Controller" />
-      <recent name="$PROJECT_DIR$/web/admin" />
-      <recent name="$PROJECT_DIR$/app/Resources/views/admin" />
-      <recent name="$PROJECT_DIR$/src/GestionUserBundle/Form" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web/forum/styles" />
       <recent name="$PROJECT_DIR$/web/forum/styles/forumus-theme-color-version" />
       <recent name="$PROJECT_DIR$/web/forum/styles/forumus-theme-color-version/theme" />
       <recent name="$PROJECT_DIR$/web/forum" />
       <recent name="$PROJECT_DIR$/web/admin/script" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/admin" />
+      <recent name="$PROJECT_DIR$/src/GestionUserBundle/Controller" />
+      <recent name="$PROJECT_DIR$/web/admin" />
+      <recent name="$PROJECT_DIR$/app/Resources/views/admin" />
+      <recent name="$PROJECT_DIR$/src/GestionUserBundle/Form" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -450,7 +532,18 @@
       <workItem from="1519643966428" duration="2874000" />
       <workItem from="1519677124392" duration="1738000" />
       <workItem from="1519678892624" duration="7589000" />
-      <workItem from="1519721992135" duration="21468000" />
+      <workItem from="1519721992135" duration="21811000" />
+      <workItem from="1519805330106" duration="9615000" />
+      <workItem from="1519852048806" duration="4132000" />
+      <workItem from="1519900397014" duration="829000" />
+      <workItem from="1519901387429" duration="375000" />
+      <workItem from="1519933351882" duration="24670000" />
+      <workItem from="1519969472747" duration="6904000" />
+      <workItem from="1519979899335" duration="7193000" />
+      <workItem from="1522104940194" duration="631000" />
+      <workItem from="1522151551568" duration="2397000" />
+      <workItem from="1522154720294" duration="265000" />
+      <workItem from="1522186342812" duration="86000" />
     </task>
     <task id="LOCAL-00001" summary="fosuser,integration temp,login and redirection,manque register temp integration">
       <created>1517873442471</created>
@@ -536,11 +629,25 @@
       <option name="project" value="LOCAL" />
       <updated>1519754040010</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="qlq rectification et reglage des fonctionalite ajout supp ,edit et ajout des role des controle">
+      <created>1519770070350</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1519770070350</updated>
+    </task>
+    <task id="LOCAL-00014" summary="forum rectification,icon login rectification">
+      <created>1519940927596</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1519940927596</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="233181000" />
+    <option name="totallyTimeSpent" value="290621000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -555,47 +662,26 @@
     <frame x="633" y="379" width="1920" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328541" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36474973" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5021299" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.48136315" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.4946752" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.4946752" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.4978701" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969433" sideWeight="0.48136315" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969433" sideWeight="0.5021299" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.48136315" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.4946752" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.4978701" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328541" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -613,394 +699,384 @@
     <MESSAGE value="fosuser,integration temp,login and redirection,manque register temp integration&#10;go pull guys" />
     <MESSAGE value="fosuser,integration temp,login and redirection,manque register temp integration" />
     <MESSAGE value="forum template integration ,cruds,stat bundle" />
-    <option name="LAST_COMMIT_MESSAGE" value="forum template integration ,cruds,stat bundle" />
+    <MESSAGE value="qlq rectification et reglage des fonctionalite ajout supp ,edit et ajout des role des controle" />
+    <MESSAGE value="forum rectification,icon login rectification" />
+    <option name="LAST_COMMIT_MESSAGE" value="forum rectification,icon login rectification" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/forum/styles/forumus-theme-color-version/theme/buttons.css">
+    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="76" column="91" lean-forward="false" selection-start-line="76" selection-start-column="82" selection-end-line="76" selection-end-column="91" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/layout.html.twig">
+    <entry file="file://$PROJECT_DIR$/web/forum/styles/forumus-theme-color-version/theme/images/header-bg/header-bg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/forum/styles/forumus-theme-color-version/theme/colors/style-1-color-3.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="406">
+          <caret line="156" column="25" lean-forward="false" selection-start-line="156" selection-start-column="25" selection-end-line="156" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig">
+    <entry file="file://$PROJECT_DIR$/web/forum/styles/forumus-theme-color-version/theme/forumus-style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="52" column="59" lean-forward="false" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="59" />
+        <state relative-caret-position="178">
+          <caret line="421" column="31" lean-forward="false" selection-start-line="421" selection-start-column="31" selection-end-line="421" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/SecurityController.php">
+    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Resources/views/Post/show_post.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="77" column="20" lean-forward="false" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+        <state relative-caret-position="4218">
+          <caret line="225" column="0" lean-forward="false" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GestionUserBundle/Controller/SecurityController.php">
+    <entry file="file://$PROJECT_DIR$/src/GestionUserBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="35" column="62" lean-forward="false" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+        <state relative-caret-position="63">
+          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/routing/security.xml">
+    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Controller/PostController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        <state relative-caret-position="2109">
+          <caret line="118" column="27" lean-forward="false" selection-start-line="118" selection-start-column="27" selection-end-line="118" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Entity/PostLike.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="31" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Resources/views/Post/list_posts_in_rubrique.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2147">
+          <caret line="113" column="30" lean-forward="false" selection-start-line="113" selection-start-column="30" selection-end-line="113" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/register.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="85" column="64" lean-forward="false" selection-start-line="85" selection-start-column="60" selection-end-line="85" selection-end-column="64" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GestionServiceBundle/Form/Ann_Cabinet_VetType.php">
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GestionUserBundle/Form/ProfileUserType.php">
+    <entry file="file://$PROJECT_DIR$/src/GestionUserBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="58" lean-forward="false" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1330">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GestionServiceBundle/Resources/views/Veterinaire/delete_vet_annonce.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GestionUserBundle/Form/RegistrationUserType.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/email/contact_vet/contact_vet.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="29" column="19" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="29" selection-end-column="19" />
+        <state relative-caret-position="57">
+          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GestionServiceBundle/Controller/VeterinaireController.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="103" column="72" lean-forward="false" selection-start-line="102" selection-start-column="7" selection-end-line="103" selection-end-column="72" />
+        <state relative-caret-position="203">
+          <caret line="154" column="53" lean-forward="false" selection-start-line="154" selection-start-column="53" selection-end-line="154" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GestionUserBundle/Controller/AdminController.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/client/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="108" column="70" lean-forward="false" selection-start-line="108" selection-start-column="70" selection-end-line="108" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOSUserEvents.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-177">
+          <caret line="255" column="10" lean-forward="false" selection-start-line="255" selection-start-column="10" selection-end-line="255" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcherInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/RegistrationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="141" column="32" lean-forward="false" selection-start-line="141" selection-start-column="32" selection-end-line="141" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/ResettingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="91" column="24" lean-forward="false" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Mailer/MailerInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <caret line="18" column="10" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Mailer/TwigSwiftMailer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GestionUserBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1159">
-          <caret line="64" column="12" lean-forward="false" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
-          <folding>
-            <element signature="e#47#104#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Repository/PostRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/forum/styles/forumus-theme-color-version/theme/content.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/forum/styles/forumus-theme-color-version/theme/responsive.css" />
-    <entry file="file://$PROJECT_DIR$/web/forum/styles/forumus-theme-color-version/theme/en/stylesheet.css" />
-    <entry file="file://$PROJECT_DIR$/web/forum/styles/forumus-theme-color-version/theme/responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/forum/styles/forumus-theme-color-version/theme/stylesheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/forum/styles/forumus-theme-color-version/theme/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3" lean-forward="true" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+        <state relative-caret-position="-589">
+          <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-294">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="95" column="22" lean-forward="false" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GestionUserBundle/Resources/views/admin/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/forum/styles/forumus-theme-color-version/theme/font-awesome.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="3" column="28792" lean-forward="false" selection-start-line="3" selection-start-column="28792" selection-end-line="3" selection-end-column="28792" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/forum/styles/forumus-theme-color-version/theme/images/icons_button.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Form/CommentType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Resources/views/Comment/edit_comment.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1463">
-          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Entity/Comment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Entity/Post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1058">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding>
-            <marker date="1519726929332" expanded="true" signature="200:3900" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Entity/Rubrique.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GestionUserBundle/Repository/usertestRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GestionUserBundle/Repository/UserRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="23" column="89" lean-forward="false" selection-start-line="23" selection-start-column="89" selection-end-line="23" selection-end-column="89" />
-          <folding>
-            <element signature="e#42#70#0#PHP" expanded="true" />
-            <element signature="e#809#841#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Form/FormView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/forum/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="77" column="45" lean-forward="false" selection-start-line="77" selection-start-column="45" selection-end-line="77" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Resources/views/Comment/add_comment.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="43" column="79" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <caret line="0" column="36" lean-forward="true" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ForumBundle/Controller/CommentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1160">
-          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+        <state relative-caret-position="417">
+          <caret line="75" column="83" lean-forward="false" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GestionServiceBundle/Controller/VeterinaireController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="162" column="33" lean-forward="false" selection-start-line="162" selection-start-column="33" selection-end-line="162" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GestionServiceBundle/Resources/views/Veterinaire/view_annonce.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="66" column="121" lean-forward="false" selection-start-line="66" selection-start-column="121" selection-end-line="66" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GestionServiceBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="41" column="27" lean-forward="false" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/common/lib/Doctrine/Common/Persistence/ObjectManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="128" column="20" lean-forward="false" selection-start-line="128" selection-start-column="20" selection-end-line="128" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GestionUserBundle/Repository/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/loader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="225" column="337" lean-forward="false" selection-start-line="225" selection-start-column="337" selection-end-line="225" selection-end-column="337" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Entity/Rubrique.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="48" column="17" lean-forward="false" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Repository/RubriqueRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Repository/CommentRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Entity/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1064">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Repository/PostRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="96" column="31" lean-forward="false" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GestionUserBundle/Resources/views/admin/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GestionUserBundle/Controller/ProfileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GestionUserBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2280">
+          <caret line="127" column="52" lean-forward="false" selection-start-line="127" selection-start-column="52" selection-end-line="127" selection-end-column="65" />
+          <folding>
+            <element signature="e#47#107#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GestionUserBundle/Controller/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/client/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="535" column="56" lean-forward="false" selection-start-line="535" selection-start-column="0" selection-end-line="536" selection-end-column="0" />
+        <state relative-caret-position="6232">
+          <caret line="328" column="12" lean-forward="false" selection-start-line="328" selection-start-column="12" selection-end-line="330" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Resources/views/Default/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/GestionServiceBundle/Resources/views/Veterinaire/consulter_vet_annonce.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="28" column="48" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Form/PostType.php">
+    <entry file="file://$PROJECT_DIR$/src/GestionServiceBundle/Resources/views/Veterinaire/consulter_vet_offre.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="47" />
+        <state relative-caret-position="2869">
+          <caret line="151" column="105" lean-forward="false" selection-start-line="151" selection-start-column="105" selection-end-line="151" selection-end-column="105" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Form/RubriqueType.php">
+    <entry file="file://$PROJECT_DIR$/src/GestionUserBundle/GestionUserBundle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="16" column="55" lean-forward="false" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Controller/RubriqueController.php">
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="25" column="57" lean-forward="false" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+        <state relative-caret-position="513">
+          <caret line="27" column="40" lean-forward="false" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GestionUserBundle/Controller/SecurityController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
           <folding>
-            <element signature="e#42#74#0#PHP" expanded="true" />
-            <element signature="e#786#826#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Resources/views/Post/add_post.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="44" column="44" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Resources/views/Post/edit_post.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Controller/PostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="72" column="53" lean-forward="false" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
-          <folding>
-            <element signature="e#42#73#0#PHP" expanded="true" />
-            <element signature="e#2417#2450#0#PHP" expanded="true" />
-            <element signature="e#2856#2889#0#PHP" expanded="true" />
+            <element signature="e#47#114#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ForumBundle/Resources/views/Rebrique/add_rebrique.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="43" column="67" lean-forward="false" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Resources/views/Post/show_post.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/forum/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="105" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding>
-            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ForumBundle/Resources/views/Post/list_post.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="72" column="46" lean-forward="false" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
+        <state relative-caret-position="247">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
